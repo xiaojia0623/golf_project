@@ -1,0 +1,133 @@
+//選手資訊 - banner
+.banner{
+    background-image: url(https://images.pexels.com/photos/914682/pexels-photo-914682.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    height: 387px;
+    max-width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    h2{
+        font-size: $font-s-48;
+        color:#ffffff;
+        font-weight: bold;
+        display: flex;
+        padding-top: 10%;
+    }
+}
+@include pad{
+    .banner{
+        h2{
+            padding-top:20%;
+        }
+    }
+  }
+@include iphone{
+    .banner{
+        h2{
+            padding-top: 50%;
+        }
+    }
+}
+
+//選手資訊 - 地區選項
+.altheteAreaZone{
+    background-image: url(https://media.istockphoto.com/id/1169537956/zh/%E7%85%A7%E7%89%87/%E9%AB%98%E7%88%BE%E5%A4%AB%E7%90%83%E5%9C%A8%E7%BE%8E%E9%BA%97%E7%9A%84%E9%AB%98%E7%88%BE%E5%A4%AB%E7%90%83%E5%A0%B4%E7%9A%84%E7%B6%A0%E8%89%B2%E8%8D%89%E5%9D%AA%E4%B8%8A.jpg?s=612x612&w=0&k=20&c=aCENk0QXlJ-dCHfmpcLaCHavlL0H0jBriwPrTchqgpM=);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    padding: 40px 0;
+    .container{
+        margin:  0 auto;
+        .areaZone{
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            h3{
+                display: inline-block;
+                margin-right: 10px;
+            }
+            .form-select{
+                width: 50%;
+            }
+        }
+    }
+}
+
+.altheteItem{
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    gap:20px;
+    .altheteCard{
+        height: 100%;
+        a{
+            text-decoration: none;
+            &:hover{
+                color:#054418;
+                text-decoration: underline;
+            }
+        }
+        img{
+            width: 235px; height: 150px;
+            object-fit: cover;
+        }
+    }
+}
+
+@include pad{
+    .altheteAreaZone{
+        padding: 40px 12px;
+        .areaZone{
+            width: 100%;
+            .form-select{
+                width: 100%;
+            }
+        }
+        .altheteItem{
+            justify-content: space-between;
+            .altheteCard{
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@include iphone{
+    .altheteAreaZone{
+        .areaZone{
+            flex-wrap: wrap;
+            justify-content: start;
+            h3{
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            .form-select{
+                width: 100%;
+            }
+        }
+        .altheteItem{
+            .altheteCard{
+                max-width: 100%;
+                img{
+                    width: auto; height: auto;
+                }
+                h4{
+                    font-size: $font-s-24;
+                }
+            }
+        }
+    }
+}
+
+.pagination{
+    .page-item{
+        a{
+            font-size: $font-s-24;
+            color:$dark-green;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./layout/head'); -%>
+    <title>高球巡禮 - 最新消息</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="singleNewsSection">
+        <div class="container">
+            <!-- 麵包屑 -->
+            <nav class="bread" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="news.html">最新消息</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">文章</li>
+                </ol>
+            </nav>
+
+            <!-- 最新消息- 文章內容 -->
+            <div class="newsContentSection">
+                <div class="contentPicture">
+                    <img class="img-fluid" src="https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2023/07/18/98/23276470.jpg&x=0&y=0&sw=0&sh=0&sl=W&fw=800&exp=3600&w=930&nt=1" alt="">
+                </div>
+                <a href="#"  class="shareIcon">
+                    <span class="material-symbols-outlined">share</span>
+                    <p>分享</p>
+                </a>
+                <p class="graph-color">中央社／ 台北18日電<span>2023-07-18 13:01</span></p>
+            </div>
+
+            <div class="ContentNews">
+                <h1>哈特佛次級巡迴賽 程思嘉延長賽吞柏忌並列亞軍</h1>
+                <p>台灣女子職業高爾夫好手程思嘉，今天在LPGA次級巡迴賽的哈特佛女子錦標賽和對手鏖戰到延長賽，因吞下柏忌敗下陣來，但仍並列亞軍賺進1.6萬美元（約50萬台幣）。
+
+                    美國女子職業高爾夫協會（LPGA）的次級巡迴賽從2006年起3度更換贊助商，去年起由EPSON冠名贊助變成EPSON Tour。過去幾年台灣女將在次巡賽都有好表現，包括2021年錢珮芸、李旻都曾拿下冠軍，去年程思嘉接棒，今年則有曾彩晴。</p>
+
+                <p>原本比賽打完前2回合後，原訂當地時間週日的最終回合，因為整天大雨不斷，最終決定延後到今天完賽。
+
+                    程思嘉在3回合分別繳出67、69、69桿的穩定成績，加上原本的領先者珍妮裴（Jenny Bae，音譯）最終回合表現不佳，僅繳出70桿，最終和程思嘉以及韓國的姜敏知（Minji Kang，音譯）同為低於標準11桿的205桿打進延長賽。</p>
+                    
+                <p>只可惜3人進入延長加賽第1洞，程思嘉就吞下柏忌提前出局，留下珍妮裴和姜敏知角逐冠軍，2人又多打了6洞才分出勝負，最後由珍妮裴拿下她在次級巡迴賽的第2座冠軍。
+                    程思嘉近年來在LPGA次級巡迴賽表現穩定，2019年就拿下持火者錦標賽冠軍，去年則是獲得島嶼度假村錦標賽冠軍盃，只可惜今年無緣斬獲個人在美國賽事的第3冠。</p>
+                <p>程思嘉今年已經打了12場比賽，1場棄賽、1場淘汰其餘全都晉級，而程思嘉本季在次級巡迴賽獎金榜暫居第17名。</p>
+            </div>
+        </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

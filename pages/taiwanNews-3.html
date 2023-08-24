@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./layout/head'); -%>
+    <title>高球巡禮 - 最新消息</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="singleNewsSection">
+        <div class="container">
+            <!-- 麵包屑 -->
+            <nav class="bread" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="news.html">最新消息</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">文章</li>
+                </ol>
+            </nav>
+
+            <!-- 最新消息- 文章內容 -->
+            <div class="newsContentSection">
+                <div class="contentPicture">
+                    <img class="img-fluid" src="https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2023/07/23/98/23371200.jpg&x=0&y=0&sw=0&sh=0&sl=W&fw=800&exp=3600&w=930&nt=1" alt="">
+                </div>
+                <a href="#"  class="shareIcon">
+                    <span class="material-symbols-outlined">share</span>
+                    <p>分享</p>
+                </a>
+                <p class="graph-color">中央社／ 台北23日電<span>2023-07-23 11:16</span></p>
+            </div>
+
+            <div class="ContentNews">
+                <h1>陶氏化學湖邀請賽 侯羽桑錢珮芸第9作收</h1>
+                <p>以團體賽形式進行的LPGA陶氏化學湖邀請賽，今天結束最終回合賽事，台灣組合侯羽桑、錢珮芸以4回合低於標準14桿的266桿獲得並列第9的佳績作收。
+
+                    LPGA陶氏化學湖邀請賽（Dow Great Lakes Bay Invitational）從2019年開辦，今年總獎金270萬美元（約新台幣8370萬元）。賽事採2人1隊的團體賽，第1、3回合打4人2球（同隊2人輪流打同一球），第2、4回合打4人4球（同隊2人各自擊球，取最佳成績）。</p>
+
+                <p>這場比賽共65組報名參賽，其中除了台灣組合侯羽桑和錢珮芸外，另外，李旻和中國球員張維維搭檔，以低於標準11桿的269桿獲得並列第21名。
+
+                    錢珮芸和侯羽桑的組合，今天在第4回合的4人4球表現相當出色，2人合力繳出9博蒂、吞1柏忌的亮眼成績單，並且打下全場單回合次低的62桿。</p>
+                    
+                <p>若從個別成績來看，錢珮芸發揮得相當出色，她全場抓下9個博蒂、2次柏忌，而這個月剛滿24歲的侯羽桑則是抓下5個博蒂、吞下4次柏忌。
+
+                    最終冠軍由美國組合奈特（Cheyenne Knight）和索克爾（Elizabeth Szokol），以低於標準23桿的257桿、1桿之差捧回冠軍盃。
+                </p>
+                <p>結束這場陶氏化學湖邀請賽後，LPGA將於7月27日在法國舉行年度第5場大賽依雲錦標賽（Evian Championship），台灣女將共有4人參賽，包括徐薇淩、錢珮芸、李旻以及業餘好手黃亭瑄。</p>
+            </div>
+        </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

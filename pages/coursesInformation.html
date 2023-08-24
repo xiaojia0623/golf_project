@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./layout/head'); -%>
+    <title>高球巡禮 - 高爾夫球場地</title>
+    
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <!--高爾夫球場地-banner-->
+    <section class="banner">
+        <div class="container">
+          <h2>高爾夫球場地</h2>
+        </div>
+    </section>
+
+    <!--高爾夫球場地 -資訊頁 -->
+    <section class="courseInformation">
+        <div class="container">
+            <!-- 麵包屑 -->
+            <nav class="bread" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="Courses.html">場地</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">場地資訊</li>
+                </ol>
+            </nav>
+
+            <!-- 場地圖 -->
+            <div class="course-pic mb-5"  data-aos="fade-up">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipNgkFkjGrRhgNqdZfRScjeyVXd9yepv3YuvCQfR=s1360-w1360-h1020" alt="Royal County Down Golf Club圖">
+            </div>
+
+            <!-- 場地資訊 -->
+            <div class="courseInfo">
+                <h3  data-aos="fade-up">地點：北愛爾蘭 Royal County Down Golf Club</h3>
+                <p  data-aos="fade-up">7,186碼、71標準桿    得分：8.659</p>
+                <p  data-aos="fade-up">
+                    多次得到冠軍的北愛爾蘭經典球場Royal County Down Golf Club，1889年由老湯姆
+                    ．莫里斯（Old Tom Morris）規劃設計，過去120年中由六位建築師改進，最近一次是
+                    1998年由唐納．史提爾（Donald Steel）操刀完成。球場東邊是鄧德拉姆灣（Dundrum），
+                    南邊是莫恩山脈（Mourne），球場動線在大小濱海沙丘之間流暢展開，若是在春天時節造訪，會
+                    看到金雀花開滿金黃色的花朵覆蓋沙丘，是相當可愛的高球場。狹小的果嶺出人意料地平坦，彷彿
+                    是為了彌補崎嶇的地形和無數的盲目擊球，因為沙坑大多數都帶有彎曲又濃密的馬拉姆草和難以穿
+                    透的石南叢，加上海風吹襲影響，著重精準控球勝於距離。
+                </p>
+                <span>文獻參考: https://www.luxurywatcher.com/zh-Hant/article/32513</span>
+            </div>
+        </div>
+    </section>
+    <%- include('./layout/footer'); -%>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

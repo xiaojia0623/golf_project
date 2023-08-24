@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./layout/head'); -%>
+    <title>高球巡禮 - 最新消息</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="singleNewsSection">
+        <div class="container">
+            <!-- 麵包屑 -->
+            <nav class="bread" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="news.html">最新消息</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">文章</li>
+                </ol>
+            </nav>
+
+            <!-- 最新消息- 文章內容 -->
+            <div class="newsContentSection">
+                <div class="contentPicture">
+                    <img class="img-fluid" src="https://www.golfchannel.com/sites/default/files/2016/06/27/flag_1920_pga_tour.jpg" alt="">
+                </div>
+                <a href="#"  class="shareIcon">
+                    <span class="material-symbols-outlined">share</span>
+                    <p>分享</p>
+                </a>
+                <p class="graph-color">BY BRENTLEY ROMINE.<span>AUGUST 3, 2023 AT 9:50 AM</span></p>
+            </div>
+
+            <div class="ContentNews">
+                <h1>How the 2024 PGA Tour schedule will look and function</h1>
+                <p>As the PGA Tour gets ready to officially announce its new-look 2024 schedule next week, all but five of the Tour’s 
+                    biggest tournaments, in a slight change of course, will feature cuts.</p>
+
+                <p>The news was first reported by Golfweek’s Eamon Lynch and confirmed to GolfChannel.com by a source with knowledge of 
+                    the 2024 PGA Tour schedule that will be unveiled on Tuesday at the FedEx St. Jude Championship, the first playoff event. 
+                    The Tour told Golfweek that it would not offer comment until its official announcement.</p>
+                    
+                <p>As part of the new schedule, there will be 16 of what will now be called, as Golf.com’s Sean Zak first noted, signature 
+                    events – formerly called elevated and then designated – this upcoming season: the four major championships, The Players, 
+                    three FedExCup playoff events, The Sentry, AT&T Pebble Beach Pro-Am, Genesis Invitational, Arnold Palmer Invitational, 
+                    RBC Heritage, Wells Fargo Championship, Memorial Tournament and Travelers Championship. Except for the Maui event formerly 
+                    known as the Tournament of Champions, Pebble and Genesis (the non-signature WM Phoenix Open bisects the latter two), they 
+                    will be paired and staggered on the calendar and separated by at least two consecutive non-signature events, which GolfChannel.
+                    com's Rex Hoggard reported in May.
+                </p>
+                <p>
+                    The Tour’s chief tournaments and competitions officer, Andy Pazder, told Hoggard in June, “We’ve announced that they would be 
+                    no-cut events but that’s something that if there’s support for a change there, could be that it’s some of the designated events, 
+                    all of the designated events or none of the designated events [have a cut], we’ll have a conversation around that.”
+                </p>
+                <p>GolfChannel.com has confirmed Golfweek’s initial report that 36-hole cuts will be part of all but five of the signature tournaments. 
+                    The events that won’t have cuts will be The Sentry, Pebble, Heritage, Wells Fargo and Travelers. For the non-major, non-playoff 
+                    and non-Players events with cuts – Genesis, API and Memorial – the cut will be the top 50 and ties or, as one source said, the 10-shot rule.</p>
+            </div>
+        </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

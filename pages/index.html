@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./layout/head'); -%>
+    <title>高球巡禮 - 首頁</title>
+  </head>
+  <body>
+
+    <%- include('./layout/header'); -%>
+
+    <!--首頁-banner-->
+    <section class="banner">
+      <div class="container">
+        <h2 data-aos="fade-right">歡迎來到<br>高爾夫球的世界</h2>
+      </div>
+    </section>
+
+    <!--首頁-最新消息-->
+    <section class="homeNews">
+      <div class="container">
+        <h3>最新消息</h3>
+        <div class="homeNewFlex">
+          <div class="homeNews-section" data-aos="fade-up">
+            <div class="News" >
+              <h4>國內:</h4>
+              <p><span>New</span><a href="news.html">雄獅Ｘ星宇首辦海外高球賽 一桿進洞就送...</a></p>
+              <p><span>New</span><a href="news.html">吳佳晏奪日巡次級賽第2勝...</a></p>
+            </div>
+            <div class="News" >
+              <h4>國外:</h4>
+              <p>New<a href="news.html">Justin Thomas headlines notables keeping season...</a></p>
+              <p>New<a href="news.html">Western Amateur semifinals set after grueling day ...</a></p>
+            </div>
+          </div>
+          <div class="homeNews-img" data-aos="fade-up">
+            <img src="https://media.istockphoto.com/id/155421739/zh/%E7%85%A7%E7%89%87/tea-off.jpg?s=612x612&w=0&k=20&c=dsELy3EfzEAbflkoKKFnreGl2jY2tdaKvwnZpJ_nCFQ=" alt="新聞圖">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--首頁-目前排行榜-->
+    <section class="competition">
+      <div class="container">
+        <h3>目前國內外比賽排行榜</h3>
+        <div class="rankTable">
+          <div class="h-ranking">
+            <h4>國內比賽排行榜</h4>
+            <div class="table-responsive"  data-aos="fade-right">
+              <table class="table text-center table-sm table-hover">
+                <thead>
+                    <tr>
+                      <th scope="col">Ranking</th>
+                      <th scope="col">Nationality</th>
+                      <th scope="col">Athlete</th>
+                      <th scope="col">Bonus</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td><span class="fi fi-tw"></span></td>
+                      <td>詹世昌</td>
+                      <td>1.613,000</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td><span class="fi fi-tw"></span></td>
+                      <td>洪建堯</td>
+                      <td>1.599,000</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td><span class="fi fi-tw"></span></td>
+                      <td>王偉軒</td>
+                      <td>962,500</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td><span class="fi fi-tw"></span></td>
+                      <td>謝繼賢</td>
+                      <td>703,000</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td><span class="fi fi-tw"></span></td>
+                      <td>呂偉智</td>
+                      <td>558,500</td>
+                    </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="h-ranking table-responsive">
+            <h4>國外比賽排行榜</h4>
+            <div  class="table-responsive"  data-aos="fade-right">
+              <table class="table text-center table-sm table-hover">
+                <thead>
+                    <tr>
+                      <th>Ranking</th>
+                      <th>Nationality</th>
+                      <th>Athlete</th>
+                      <th>Holes</th>
+                      <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td><span class="fi fi-us"></span></td>
+                    <td>W.克拉克</td>
+                    <td>F</td>
+                    <td>-10</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td><span class="fi fi-gb-nir"></span></td>
+                    <td>小麥</td>
+                    <td>F</td>
+                    <td>-9</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td><span class="fi fi-us"></span></td>
+                    <td>S.舍夫勒 </td>
+                    <td>F</td>
+                    <td>-7</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td><span class="fi fi-au"></span></td>
+                    <td>C.史密斯</td>
+                    <td>F</td>
+                    <td>-6</td>
+                  </tr>
+                  <tr>
+                    <td>T5</td>
+                    <td><span class="fi fi-au"></span></td>
+                    <td>李旻宇</td>
+                    <td>F</td>
+                    <td>-5</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--首頁-選手專區-->
+    <section class="homeAthlete">
+      <div class="container">
+        <h3>選手專區</h3>
+        <!-- Swiper -->
+        <div class="swiper mySwiper homeAthlete" data-aos="fade-up">
+          <ul class="homeCard swiper-wrapper">
+              <li class="homeCardItem swiper-slide">
+                  <a href="althetePerson.html">
+                      <div class="athleteImg">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Jon_Rahm.png/375px-Jon_Rahm.png" alt="喬恩·拉姆圖">
+                      </div>
+                      <h4>喬恩·拉姆</h4>
+                      <p>Jon Rahm Rodríguez</p>
+                      <p>西班牙</p>
+                  </a>
+              </li>
+              <li class="homeCardItem swiper-slide">
+                  <a href="#">
+                      <div class="athleteImg">
+                      <img src="https://media.gq.com.tw/photos/5dbc50cf2551d400086a161c/16:9/w_1280,c_limit/2018031464218729.jpg" alt="賈斯汀·托馬斯圖">
+                      </div>
+                      <h4>賈斯汀·托馬斯</h4>
+                      <p>Justin Thomas</p>
+                      <p>美國</p>
+                  </a>
+              </li>
+              <li class="homeCardItem swiper-slide">
+                  <a href="#">
+                      <div class="athleteImg">
+                      <img src="https://gocxemphim.com/wp-content/uploads/2023/02/d41d8cd98f00b204e9800998ecf8427e-10.jpg" alt="賈斯汀·羅斯圖">
+                      </div>
+                      <h4>賈斯汀·羅斯</h4>
+                      <p>Justin Rose</p>
+                      <p>英國</p>
+                  </a>
+              </li>
+              <li class="homeCardItem swiper-slide">
+                  <a href="#">
+                      <div class="athleteImg">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Dustin_Johnson_2012.jpg/330px-Dustin_Johnson_2012.jpg" alt="達斯汀·約翰遜圖">
+                      </div>
+                      <h4>達斯汀·約翰遜</h4>
+                      <p>Dustin Hunter Johnson</p>
+                      <p>美國</p>
+                  </a>
+              </li>
+              <li class="homeCardItem swiper-slide">
+                  <a href="#">
+                      <div class="athleteImg">
+                      <img src="https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcSwSkJLEvEZPsoTGBvF_7W_zRX7uM2Npk_-8zWxI3yRA48yqBvb4hsuhMb5KB0O_usS" alt="斯科蒂·謝弗勒圖">
+                      </div>
+                      <h4>斯科蒂·謝弗勒</h4>
+                      <p>Scottie Scheffler</p>
+                      <p>美國</p>
+                  </a>
+              </li>
+          </ul>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+      </div>
+      </div>
+    </section>
+
+    <!--首頁-高爾夫球知識站-->
+    <section class="homeKnow">
+      <div class="container">
+        <h3>高爾夫球知識站</h3>
+        <div class="homeTabs" data-aos="fade-up">
+          <!--   tab group -->
+          <input type="radio" id="tab-1" name="tab" checked="checked">
+          <label for="tab-1">高爾夫</label>
+          <div class="tab-content">
+            <p>也稱高球，是種室外體育運動，個人或團體球員以高爾夫球桿將一顆小球打進球洞，
+            使用杆數較少者獲勝。大部份的比賽有九洞或十八洞。<a href="Knowledge.html" class="firstSpan">... More</a><span class="secSpan">目前世界上較為知名的個人
+            比賽有：英國公開賽、英國業餘高爾夫球錦標賽、美國公開賽、美國業餘高爾夫球
+            錦標賽、美國名人賽、美國職業高爾夫球協會錦標賽。最有名的團體比賽有高爾夫
+            世界盃、萊德杯歐美對抗賽、沃克杯美英愛爾蘭系列賽。高爾夫球將於2016年里
+            約熱內盧奧運重新被列為奧運比賽項目。英國公開賽、美國公開賽、美國名人賽、
+            美國職業高爾夫球協會錦標賽是高爾夫球界四大大滿貫賽事。一般認為現代高
+            爾夫球起源於1456年的蘇格蘭，今日的高爾夫球18洞制度亦由蘇格蘭制定，當
+            地亦有全球最歷史悠久的高球會，被視作蘇格蘭國粹。艾倫·雪帕德是首個在地球
+            以外打高爾夫球的人，他在阿波羅14號任務中運了1支球桿、2個球上船。雖然第1
+            球打失了，但第2球在低阻力及重力的環境下據說打了2英里（3.2公里）遠，是
+            開球最遠的非官方紀錄。</span></p>
+          </div>
+          <!--   tab group end -->
+          
+          <!--   tab group -->
+          <input type="radio" name="tab" id="tab-2">
+          <label for="tab-2">標準桿</label>
+          <div class="tab-content">
+            <p>球洞會依標準桿來分類，標準桿是指球員根據設計應當完成的桿數。
+            桿數中一定會包括發球的一桿及二個推桿，因此標準桿至少是三桿，
+            但標準桿是四桿或五桿的球洞也很常見，甚至也有標準桿是六桿或七
+            桿的球洞。<a href="Knowledge.html" class="firstSpan">... More</a><span class="secSpan">發球以外的擊球以及推桿一般會在球道進行。例如一個有
+            經驗的球員在標準桿四桿的球洞時，會希望在第一次擊球發球後，第
+            二次擊球就可以將球擊到果嶺，再用二個推桿使球進洞，就可以平標準桿。
+            若是擊球讓球上果嶺後，還留有二次推桿機會可以使球進洞，則稱為標準
+            桿上果嶺（green in regulation），簡稱GIR。</span></p>
+          </div>
+          <!--   tab group end -->
+          
+          <!--   tab group -->
+          <input type="radio" name="tab" id="tab-3">
+          <label for="tab-3">果嶺</label>
+          <div class="tab-content">
+            <p>果嶺（英語：putting green）是green的音譯。
+
+            果嶺的品質並不是相同的。一般來說，最好的果嶺都是得到很好養護，使得球可
+            以很平滑的貼著切割過的草坪上滾動。<a href="Knowledge.html" class="firstSpan">... More</a><span class="secSpan">高爾夫愛好者一般把好的果嶺描述為faster
+            （快的），輕輕的一擊球就可以在上面滾動很遠。相對的，如果球在上面滾動相當
+            的距離需要很大的力氣去擊球，這樣的果嶺稱為slow（慢的）（視果嶺的草種以及
+            長短，生長方向而決定果嶺的快慢）由於果嶺的地形高低起伏會讓打者感覺其困難度。
+            
+            測定果嶺球速時，先在果嶺上選定3m×3m之區域，再將球置於球速測定器（stimp meter）
+            凹槽中確定球是否會滾動。再測定是否受坡度影響，如受坡度影響則測上坡滾動距離
+            （Su）及下坡滾動距離（Sd），測定之果嶺球速（Green speed adjusted for slope 
+            effect）=2×（Su×Sd）/（Su＋Sd）。一般果嶺都有一定的坡度，只是坡度大小存在差
+            異。</span></p>
+          </div>
+          <!--   tab group end -->
+          
+          
+        </div>
+      </div>
+    </section>
+
+    <!--首頁-高爾夫球場地-->
+    <section class="homeCourses">
+      <div class="container">
+        <h3>高爾夫球場地</h3>
+        <div class="homeCoursesTabs" data-aos="fade-up">
+          <!--   tab group -->
+          <input  class="homeCoursInput" type="radio" id="homeCoursesTab-1" name="homeCoursesTab" checked="checked">
+          <label for="homeCoursesTab-1" class="homeCoursLable">國內高爾夫球場</label>
+          <div class=" container homeCoursesTab-content">
+            <div class="row g-3">
+              <div class="col-md-6 col-lg-6 ">
+                <div class="p-3 border bg-light  h-100">
+                  <div class="homeCourseSplit">
+                    <div class="homeCourseImg">
+                      <img src="https://cdn2.ettoday.net/images/4538/4538645.jpg" alt="球場圖">
+                    </div>
+                    <div class="homeCourseContent">
+                      <div class="homeCourseItem">
+                        <h4>東華高爾夫俱樂部</h4>
+                        <p>球道總數：18</p>
+                        <p>球道長度：6,687碼</p>
+                        <p>地址：<a href="#" class="addressCourse">新北市林口區東華路99號</a></p>
+                      </div>
+                      <a href="Courses.html" class="homeCourseBtn">More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-6">
+                <div class="p-3 border bg-light h-100">
+                  <div class="homeCourseSplit">
+                    <div class="homeCourseImg">
+                      <img src="https://hhotelzine.files.wordpress.com/2015/11/fetch.jpg" alt="球場圖">
+                    </div>
+                    <div class="homeCourseContent">
+                      <div class="homeCourseItem">
+                        <h4>林口高爾夫球場</h4>
+                        <p>球道總數：27</p>
+                        <p>球道長度：10,000碼</p>
+                        <p>地址：<a href="#" class="addressCourse">新北市林口區後湖路50-1號</a></p>
+                      </div>
+                      <a href="Courses.html" class="homeCourseBtn">More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-6">
+                <div class="p-3 border bg-light h-100">
+                  <div class="homeCourseSplit">
+                    <div class="homeCourseImg">
+                      <img src="https://www.taiwan.net.tw/pic.ashx?qp=1/big_GolfCourse/pic_0206_19.jpg&sizetype=4" alt="球場圖">
+                    </div>
+                    <div class="homeCourseContent">
+                      <div class="homeCourseItem">
+                        <h4>台中國際高爾夫球場</h4>
+                        <p>球道總數：27</p>
+                        <p>球道長度：<br>東區3,626碼/中區3,492碼/西區3,626碼</p>
+                        <p>地址：<a href="#" class="addressCourse">臺中市北屯區北坑巷21-8號</a></p>
+                      </div>
+                      <a href="Courses.html" class="homeCourseBtn">More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-6 ">
+                <div class="p-3 border bg-light h-100">
+                  <div class="homeCourseSplit">
+                    <div class="homeCourseImg">
+                      <img src="https://khh.travel/image/9/1024x768" alt="球場圖">
+                    </div>
+                    <div class="homeCourseContent">
+                      <div class="homeCourseItem">
+                        <h4>信誼高爾夫球場</h4>
+                        <p>球道總數：18</p>
+                        <p>球道長度：6,600~7,600碼</p>
+                        <p>地址：<a href="#" class="addressCourse">高雄市大樹區統嶺里信誼路1號</a></p>
+                      </div>
+                      <a href="Courses.html" class="homeCourseBtn">More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--   tab group end -->
+          
+          <!--   tab group -->
+          <input  class="homeCoursInput" type="radio" name="homeCoursesTab" id="homeCoursesTab-2">
+          <label for="homeCoursesTab-2" class="homeCoursLable">國外高爾夫球場</label>
+          <div class="homeCoursesTab-content">
+            <div class="row g-3">
+              <div class="col-md-6 col-lg-6">
+                <div class="p-3 border bg-light h-100">
+                  <div class="homeCourseSplit">
+                    <div class="homeCourseImg">
+                      <img src="https://jouer.golf/content/uploads/2020/01/ugolf-bethemont-6-1280x720.jpg" alt="球場圖">
+                    </div>
+                    <div class="homeCourseContent">
+                      <div class="homeCourseItem">
+                        <h4>貝特蒙球場 Béthemont</h4>
+                        <p>球道總數：18 洞，72 桿</p>
+                        <p>球道長度：<br>白色 6,035m/黃色 5,550m/ 藍色 5,128m/ 紅色 4,770m</p>
+                        <p>地址：<a href="#" class="addressCourse">THE NATIONAL GOLF CENTRE - The Broadway, Woodhall Spa, Lincolnshire, LN10 6PU</a></p>
+                      </div>
+                      <a href="Courses.html" class="homeCourseBtn">More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-6">
+                <div class="p-3 border bg-light h-100">
+                  <div class="homeCourseSplit">
+                    <div class="homeCourseImg">
+                      <img src="https://www.yusin.com.tw/img/Course/seq_63/(20157111590)St%20Andrews%20Old%20course-1.jpg" alt="球場圖">
+                    </div>
+                    <div class="homeCourseContent">
+                      <div class="homeCourseItem">
+                        <h4>聖安德魯老球場<br>Old Course at St Andrews</h4>
+                        <p>球道總數：18 洞，72 桿</p>
+                        <p>球道長度：6,680碼</p>
+                        <p>地址：<a href="#" class="addressCourse">W Sands Rd, St Andrews KY16 9XL英國</a></p>
+                      </div>
+                      <a href="Courses.html" class="homeCourseBtn">More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-6">
+                <div class="p-3 border bg-light h-100">
+                  <div class="homeCourseSplit">
+                    <div class="homeCourseImg">
+                      <img src="https://tong.visitkorea.or.kr/cms/resource/31/2648531_image2_1.jpg" alt="球場圖">
+                    </div>
+                    <div class="homeCourseContent">
+                      <div class="homeCourseItem">
+                        <h4>中文高爾夫俱樂部</h4>
+                        <p>球道總數：18</p>
+                        <p>球道長度：6,820碼</p>
+                        <p>地址：<a href="#" class="addressCourse">濟州特別自治道西歸浦市中文觀光路72街60</a></p>
+                      </div>
+                      <a href="Courses.html" class="homeCourseBtn">More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-6">
+                <div class="p-3 border bg-light h-100">
+                  <div class="homeCourseSplit">
+                    <div class="homeCourseImg">
+                      <img src="https://cdn2.ettoday.net/images/4538/4538645.jpg" alt="球場圖">
+                    </div>
+                    <div class="homeCourseContent">
+                      <div class="homeCourseItem">
+                        <h4>漢拿山高爾夫鄉村俱樂部</h4>
+                        <p>球道總數：18</p>
+                        <p>球道長度：7004碼</p>
+                        <p>地址：<a href="#" class="addressCourse">56-46, Seondolmokdong-gil, Jeju-si, Jeju-do, Korea</a></p>
+                      </div>
+                      <a href="Courses.html" class="homeCourseBtn">More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--   tab group end -->
+        </div>
+      </div>
+    </section>
+
+
+    <!--首頁-表尾-->
+    <%- include('./layout/footer'); -%>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

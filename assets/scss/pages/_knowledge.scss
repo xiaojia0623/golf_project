@@ -1,0 +1,130 @@
+//高爾夫球知識站
+.knowledge{
+    background-image: url(https://media.istockphoto.com/id/173817125/photo/grass-field-with-blue-sky.jpg?s=612x612&w=0&k=20&c=BKTsQLXAFLzrd2mnqJv-eiRH7TEBSg5MQs-YfOQ4SdE=);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+
+.nav-pills-custom {
+    .nav-link{
+        color: #aaa;
+        background: #fff;
+        position: relative;
+    }
+}
+.nav-pills-custom{
+    .nav-link{
+        span{
+            font-size: 20px;
+            
+        }
+        &.active{
+            color: #45b649;
+            background: #fff;
+        }
+    }
+}
+
+.nav-pills-custom{
+    .nav-link{
+        &.active, &::before{
+            opacity: 1;
+        }
+    }
+}
+
+.tab-content{
+    .tab-pane{
+        background-image: linear-gradient(to bottom, rgba(239, 241, 241, 0) , rgba(73, 215, 55, .5) );
+        h4{
+            font-size: $font-s-28;
+        }
+        h5{
+            font-size: $font-s-24;
+            margin-bottom: 10px;
+            color:#086f0c;
+        }
+        h6{
+            font-size: $font-s-22;
+            color:$dark-green;
+        }
+        p{
+            font-size: $font-s-18;
+        }
+        ul{
+            li{
+                font-size: $font-s-18;
+            }
+        }
+        img{
+            max-width: 100%;
+        }
+        .TeeCard{
+            max-width: 100%;
+        }
+        .compet{
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    }
+}
+
+
+/* Add indicator arrow for the active tab */
+@include pad {
+    .nav-pills-custom{
+        .nav-link{
+            &::before{
+                content: '';
+                display: block;
+                border-top: 8px solid transparent;
+                border-left: 10px solid #fff;
+                border-bottom: 8px solid transparent;
+                position: absolute;
+                top: 50%;
+                right: -10px;
+                transform: translateY(-50%);
+                opacity: 0;
+            }
+        }
+    }
+}
+
+@include pad{
+    .knowledge{
+        .picFlex{
+            flex-direction: column;
+            .teBox{
+                width: 100%;
+            }
+            p{
+                margin: 10px 0;
+                width: 100%;
+            }
+            img{
+                border-radius: 10px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+@include iphone{
+    .knowledge{
+        .tab-content{
+            .tab-pane{
+                .standerImg{
+                    display: none;
+                }
+                .sm-none, .table{
+                    display: none;
+                }
+                .table{
+                    border:none;
+                }
+            }
+        }
+    }
+}

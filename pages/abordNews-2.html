@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./layout/head'); -%>
+    <title>高球巡禮 - 最新消息</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="singleNewsSection">
+        <div class="container">
+            <!-- 麵包屑 -->
+            <nav class="bread" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="news.html">最新消息</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">文章</li>
+                </ol>
+            </nav>
+
+            <!-- 最新消息- 文章內容 -->
+            <div class="newsContentSection">
+                <div class="contentPicture">
+                    <img class="img-fluid" src="https://www.golfchannel.com/sites/default/files/2023/08/03/jthomas_1920_putter_wyndham23.jpg" alt="">
+                </div>
+                <a href="#"  class="shareIcon">
+                    <span class="material-symbols-outlined">share</span>
+                    <p>分享</p>
+                </a>
+                <p class="graph-color">BY BRENTLEY ROMINE.<span>AUGUST 3, 2023 AT 4:05 PM</span></p>
+            </div>
+
+            <div class="ContentNews">
+                <h1>With season on line, Justin Thomas ditches counterbalanced putter after one week</h1>
+                <p>Justin Thomas’ latest putter experiment lasted just two rounds.</p>
+
+                <p>Thomas, who has switched putters on a few occasions in recent years, moved to a Scotty 
+                    Cameron prototype Phantom X9 putter with a 38-inch counterbalanced shaft for last week’s 
+                    3M Open. However, after missing the cut in Minnesota and needing a strong finish at this 
+                    week’s Wyndham Championship to crack the 70-man FedExCup Playoffs, Thomas has gone back 
+                    to one of his trusty flatsticks, a Scotty Cameron X5 Tour Circle T with a 34.5-inch shaft.</p>
+                    
+                <p>“I just went back to my old faithful,” Thomas said Thursday after shooting even-par 70 
+                    at Sedgefield Country Club. “I putted with it on Saturday last week after I missed the 
+                    cut for probably like an hour, maybe a little more, on the putting green, it felt great. 
+                    I think if it was a little different situation or a little different part of the season, 
+                    I'd probably keep messing with it, but with a week like this, I want to have the putter in 
+                    my hands that I've made the most clutch and successful and good putts with and that's what 
+                    that one is.”
+                </p>
+                <p>
+                    Thomas arrived in Greensboro, North Carolina, needing a minimum finish of solo 18th at the 
+                    Wyndham to extend his season (he requires a solo third or better without any help to qualify 
+                    for next week’s playoff opener in Memphis). His down year has been a combination of a 
+                    ball-striking dip (No. 25 in strokes gained: tee-to-green) and struggles on the greens 
+                    (No. 158 in strokes gained: putting).
+                </p>
+                    
+                   
+                
+            </div>
+
+        </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

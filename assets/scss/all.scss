@@ -1,0 +1,26 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import './utils/variables';
+@import "../../node_modules/bootstrap";
+
+@import './base/reset';
+@import './base/fontStyle';
+
+@import './themes/theme';
+@import './utils/mixin';
+
+@import './layout/header.scss';
+@import './layout/footer.scss';
+@import './layout/animate';
+
+@import './pages/index.scss';
+@import './pages/banner';
+@import './pages/news';
+@import './pages/althete';
+@import './pages/althetePerson';
+@import './pages/knowledge';
+@import './pages/forum';
+@import './pages/forumContent';
+@import './pages/publishArticles';
+@import './pages/courses';
+@import './pages/coursesInformation';
+@import './pages/login';

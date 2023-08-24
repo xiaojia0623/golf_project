@@ -1,0 +1,86 @@
+.altheteSection{
+    background-image: url(https://media.istockphoto.com/id/1169537956/zh/%E7%85%A7%E7%89%87/%E9%AB%98%E7%88%BE%E5%A4%AB%E7%90%83%E5%9C%A8%E7%BE%8E%E9%BA%97%E7%9A%84%E9%AB%98%E7%88%BE%E5%A4%AB%E7%90%83%E5%A0%B4%E7%9A%84%E7%B6%A0%E8%89%B2%E8%8D%89%E5%9D%AA%E4%B8%8A.jpg?s=612x612&w=0&k=20&c=aCENk0QXlJ-dCHfmpcLaCHavlL0H0jBriwPrTchqgpM=);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    padding: 40px 12px;
+    .container{
+        margin: 0 auto;
+        .bread{
+            .breadcrumb{
+                display: flex;
+                font-size: $font-s-22;
+                &.active{
+                    color:#000;
+                    
+                }
+                a{
+                    text-decoration: none;
+                    color:#2b8338;
+                }
+            }
+        }
+        h3{
+            display: inline-block;
+            font-size: $font-s-30;
+            margin-bottom: 20px;
+            span{
+                font-size: $font-s-26;
+            }
+        }
+    }
+}
+
+.althPicProduct{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap:24px;
+    img{
+        width: 100%;
+    }
+    .althInfo{
+        width: 100%;
+        h4{
+            font-size: $font-s-26;
+        }
+        .contry{
+            font-size: $font-s-24;
+            margin-bottom: 20px;
+        }
+        .introduce{
+            font-size: $font-s-22;
+        }
+    }
+}
+.table{
+    tr, td, th{
+        border:2px solid $dark-green;
+    }
+}
+
+@include pad{
+    .altheteSection{
+        .althPicProduct{
+            flex-direction: column;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+@include iphone{
+    .altheteSection{
+        .althInfo{
+            h4{
+                font-size: $font-s-24;
+            }
+            .contry{
+                font-size: $font-s-22;
+            }
+            .introduce{
+                font-size: $font-s-18;
+            }
+        }
+    }
+}

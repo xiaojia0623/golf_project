@@ -1,0 +1,70 @@
+//討論區
+
+.forum{
+    background-image: url(https://images.unsplash.com/photo-1632946269126-0f8edbe8b068?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGdvbGZ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    padding: 40px 0;
+    .container{
+        margin: 0 auto;
+        .btn{
+            background-color: $dark-green;
+            color:#fff;
+            &:hover{
+                background-color: #3b9e35;
+            }
+        }
+        .nav-tabs{
+            .nav-link{
+                color:#8a8989;
+                font-size: $font-s-22;
+                &.active{
+                    color:$dark-green;
+                }
+            }
+        }
+        .tab-content{
+            .tab-pane{
+                background-image: none;
+            }
+            .table{
+                .firstLine{
+                    th{
+                        background-color: #1d5d1e;
+                        color: #fff; 
+                    }
+                }
+                td{
+                    padding: 20px 10px 0px 10px;
+                    a{
+                        &:hover{
+                            color:orange;
+                        }
+                    }
+                }
+                .tdSpan{
+                    color:#8e968e;
+                }
+                tbody{
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+@include iphone{
+    .forum{
+        .tab-content{
+            padding: 20px 12px;
+            .table{
+                margin: 0 auto;
+            }
+        }
+        .pagination{
+            margin-top: 20px;
+        }
+    }
+}

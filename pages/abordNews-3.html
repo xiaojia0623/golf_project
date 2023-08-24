@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./layout/head'); -%>
+    <title>高球巡禮 - 最新消息</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="singleNewsSection">
+        <div class="container">
+            <!-- 麵包屑 -->
+            <nav class="bread" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="news.html">最新消息</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">文章</li>
+                </ol>
+            </nav>
+
+            <!-- 最新消息- 文章內容 -->
+            <div class="newsContentSection">
+                <div class="contentPicture">
+                    <img class="img-fluid" src="https://www.golfchannel.com/sites/default/files/2023/08/04/Goodman_1920_WesternAm23_Ro16_Driver.jpg" alt="">
+                </div>
+                <a href="#"  class="shareIcon">
+                    <span class="material-symbols-outlined">share</span>
+                    <p>分享</p>
+                </a>
+                <p class="graph-color">BY COLBY POWELL.<span>AUGUST 4, 2023 AT 4:09 PM</span></p>
+            </div>
+
+            <div class="ContentNews">
+                <h1>Western Amateur semifinals set after grueling day at North Shore Country Club</h1>
+                <p>The semifinals are set at the Western Amateur, where Drew Goodman, Christiaan Maas, Kazuma 
+                    Kobori and Matthew McClean advanced after a grueling day at North Shore Country Club in 
+                    Glenview, Illinois.</p>
+
+                <p>Play got underway early Friday morning in the round of 16, and the first match out set the 
+                    tone for the day. Top-seeded Brendan Valdes was defeated by Carson Bacha, the 16 seed, in 
+                    19 holes. Bacha was then toppled by ninth-seeded Kazuma Kobori, 2 up, in the quarters to 
+                    send Kobori to the semis.</p>
+                    
+                <p>He’ll face McClean with a spot in the finals on the line. McClean, the five seed, started his 
+                    day with a 2-and-1 victory over Preston Summerhays. He then took down fourth-seeded Gustav 
+                    Frimodt, 5 and 4, in the quarterfinals. Frimodt defeated 32-year-old Stewart Hagestad in 
+                    the round of 16. Hagestad has long featured in the game’s prominent amateur events, 
+                    including three appearances in the Walker Cup.
+                </p>
+                <p>
+                    The other side of the bracket will feature the highest remaining seed, with second-seeded 
+                    Drew Goodman facing the No. 11 seed, Christiaan Maas.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

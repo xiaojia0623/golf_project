@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./layout/head'); -%>
+    <title>高球巡禮 - 討論區</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <!--討論區-banner-->
+    <section class="banner">
+        <div class="container">
+          <h2 data-aos="fade-right">討論區</h2>
+        </div>
+    </section>
+
+    <!--討論區-主內容-->
+    <section class="forum">
+        <div class="container">
+            <a href="publishArticles.html" class="btn mb-5 d-inline-block justify-content-end"  data-aos="fade-up">發表文章</a>
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist"  data-aos="fade-up">
+                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">國內討論</button>
+                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">國外討論</button>
+                </div>
+            </nav>
+            <div id="liveAlertPlaceholder"></div>
+            <div class="tab-content" id="nav-tabContent" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                        <table class="table table-hover align-middle  ">
+                            <thead class="firstLine">  
+                                <tr class="text-center fs-5">
+                                    <th scope="col">主題</th>
+                                    <th scope="col">發布時間</th>
+                                    <th scope="col">回應數</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr scope="row" class="align-items-center">
+                                    <td><a href="forumContent.html">Garmin Approach R10雷達高爾夫訓練儀實測｜數據、模擬球局
+                                        、錄影我全都要！...</a></td>
+                                    <td class="text-center ">
+                                        <p>Martin</p>
+                                        <span class="tdSpan">2023-07-26 22:30</span>
+                                    </td>
+                                    <td class="text-center">123</td>
+                                </tr>
+                                <tr scope="row" class="align-items-center">
+                                    <td><a href="#">三星Galaxy Watch6 Classic / Tab S9 Ultra揭曉｜錶圈回歸、平板
+                                        有S8 Gen2與防水加持！...</a></td>
+                                    <td class="text-center">
+                                        <p>Martin</p>
+                                        <span class="tdSpan">2023-07-26 22:30</span>
+                                    </td>
+                                    <td class="text-center">123</td>
+                                </tr>
+                                <tr scope="row" class="align-items-center">
+                                    <td><a href="#">通常哪支最常用呢？</a></td>
+                                    <td class="text-center">
+                                        <p>Martin</p>
+                                        <span class="tdSpan">2023-07-26 22:30</span>
+                                    </td>
+                                    <td class="text-center">123</td>
+                                </tr>
+                                <tr scope="row" class="align-items-center">
+                                    <td><a href="#">你明明在練習場打得很好，為何一下場就失誤連連?
+                                        高爾夫球場攻略系列1：球場地理特性攻略...</a></td>
+                                    <td class="text-center pb-3">
+                                        <p>Martin</p>
+                                        <span class="tdSpan">2023-07-26 22:30</span>
+                                    </td>
+                                    <td class="text-center">123</td>
+                                </tr>
+                                <tr scope="row" class="align-items-center">
+                                    <td><a href="#">為什麼常聽到揮桿時雙手要與身體維持三角形?...</a></td>
+                                    <td class="text-center pb-3">
+                                        <p>Martin</p>
+                                        <span class="tdSpan">2023-07-26 22:30</span>
+                                    </td>
+                                    <td class="text-center">123</td>
+                                </tr>
+                                <tr scope="row" class="align-items-center">
+                                    <td><a href="#">三星Galaxy Z Flip5 / Z Fold5發表｜轉軸更輕更強固、多工與效能..</a></td>
+                                    <td class="text-center pb-3">
+                                        <p>Martin</p>
+                                        <span class="tdSpan">2023-07-26 22:30</span>
+                                    </td>
+                                    <td class="text-center">123</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!--新聞-下方中間頁碼-->
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item">
+                                    <a class="page-link border-0" href="#" aria-label="Previous">
+                                    <span aria-hidden="true"><i class="bi bi-chevron-left"></i></span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link border-0" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link border-0" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link border-0" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link border-0" href="#" aria-label="Next">
+                                    <span aria-hidden="true"><i class="bi bi-chevron-right"></i></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                        <table class="table table-hover align-middle table-responsive-md">
+                            <thead class="firstLine">  
+                                <tr class="text-center">
+                                    <th scope="col">主題</th>
+                                    <th scope="col">發布時間</th>
+                                    <th scope="col">回應數</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr scope="row" class="align-items-center">
+                                    <td><a href="#">Japan Geotech hardcore...</a></td>
+                                    <td class="text-center ">
+                                        <p>Martin</p>
+                                        <span class="tdSpan">2021-07-01 18:10</span>
+                                    </td>
+                                    <td class="text-center">1276</td>
+                                </tr>
+                                <tr scope="row" class="align-items-center">
+                                    <td><a href="#">The Myth and Choice of the No. 1 pole...</a></td>
+                                    <td class="text-center">
+                                        <p>Martin</p>
+                                        <span class="tdSpan">2020-10-11 14:27</span>
+                                    </td>
+                                    <td class="text-center">9042</td>
+                                </tr>
+                                <tr scope="row" class="align-items-center">
+                                    <td><a href="#">How to practice your swing at home?</a></td>
+                                    <td class="text-center">
+                                        <p>Martin</p>
+                                        <span class="tdSpan">2013-05-14 17:09</span>
+                                    </td>
+                                    <td class="text-center">29931</td>
+                                </tr>
+                                <tr scope="row" class="align-items-center">
+                                    <td><a href="#">2019 LPGA & PGA Golf Broadcasts...</a></td>
+                                    <td class="text-center pb-3">
+                                        <p>Martin</p>
+                                        <span class="tdSpan">2019-01-22 10:07</span>
+                                    </td>
+                                    <td class="text-center">6754</td>
+                                </tr>
+                                <tr scope="row" class="align-items-center">
+                                    <td><a href="#">golf equipment...</a></td>
+                                    <td class="text-center pb-3">
+                                        <p>Martin</p>
+                                        <span class="tdSpan">2017-12-30 19:54</span>
+                                    </td>
+                                    <td class="text-center">2794</td>
+                                </tr>
+                                <tr scope="row" class="align-items-center">
+                                    <td><a href="#">What golf course do you think you must visit in your life?...</a></td>
+                                    <td class="text-center pb-3">
+                                        <p>Martin</p>
+                                        <span class="tdSpan">2023-07-26 22:30</span>
+                                    </td>
+                                    <td class="text-center">123</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!--新聞-下方中間頁碼-->
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item">
+                                    <a class="page-link border-0" href="#" aria-label="Previous">
+                                    <span aria-hidden="true"><i class="bi bi-chevron-left"></i></span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link border-0" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link border-0" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link border-0" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link border-0" href="#" aria-label="Next">
+                                    <span aria-hidden="true"><i class="bi bi-chevron-right"></i></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+              </div>
+        </div>
+    </section>
+
+    <%- include('./layout/footer'); -%>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

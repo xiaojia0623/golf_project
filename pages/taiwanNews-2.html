@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./layout/head'); -%>
+    <title>高球巡禮 - 最新消息</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="singleNewsSection">
+        <div class="container">
+            <!-- 麵包屑 -->
+            <nav class="bread" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="news.html">最新消息</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">文章</li>
+                </ol>
+            </nav>
+
+            <!-- 最新消息- 文章內容 -->
+            <div class="newsContentSection">
+                <div class="contentPicture">
+                    <img class="img-fluid" src="https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2023/07/28/98/23507190.jpg&x=0&y=0&sw=0&sh=0&sl=W&fw=800&exp=3600&w=930&nt=1" alt="">
+                </div>
+                <a href="#"  class="shareIcon">
+                    <span class="material-symbols-outlined">share</span>
+                    <p>分享</p>
+                </a>
+                <p class="graph-color">中央社／ 台北28日電<span>2023-07-28 16:27</span></p>
+            </div>
+
+            <div class="ContentNews">
+                <h1>吳佳晏奪日巡次級賽第2勝 穩坐獎金后寶座</h1>
+                <p>台灣好手吳佳晏今天在總獎金2000萬日圓的JLPGA次巡嘉實多女子高球賽，以3回合低於標準15桿的201桿奪冠，這也是她本季的第2場冠軍，繼續穩居次巡賽獎金后。
+
+                    年僅19歲台灣旅日高爾夫小將吳佳晏，今年已經出賽11場比賽，經歷上半年連續3場都屈居亞軍的情況下，信心依舊不減，6月中先拿下靜岡新聞高球賽冠軍，實現個人在日本賽事的職業首冠。</p>
+
+                <p>接著在相隔1個月後，吳佳晏本週表現依舊搶眼，首輪繳出68桿後，第2回合又飆出全場最低的65桿，她也靠著這個成績，奠定今天爭冠的基礎。
+
+                    今天最終回合吳佳晏抓5博蒂、1柏忌，尤其前9洞就繳出33桿，讓她心裡篤定許多，穩穩收下這場比賽勝利。</p>
+                    
+                <p>吳佳晏在台灣成名甚早，2020年、16歲的時候，就以新台幣200萬元獎金排在台灣女子職業高爾夫巡迴賽（TLPGA）獎金榜第2名。到了2021年，吳佳晏更以打破TLPGA紀錄的490萬元成為台灣的獎金后。
+
+                    吳佳晏拿下這場冠軍後，本季累積獎金已經達到1587萬日圓（約新台幣364萬元），遙遙領先第2名的小滝水音達887萬日圓，繼續穩坐獎金后，明年很有機會直升「大聯盟」的JLPGA會員資格。
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

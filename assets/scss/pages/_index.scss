@@ -1,0 +1,494 @@
+//首頁 - banner
+.banner{
+  background-image: url(https://images.pexels.com/photos/914682/pexels-photo-914682.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  height: 387px;
+  max-width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  h2{
+      font-size: $font-s-48;
+      color:#ffffff;
+      font-weight: bold;
+      display: flex;
+      padding-top: 10%;
+  }
+}
+
+@include pad{
+  .banner{
+      h2{
+          padding-top: 15%;
+      }
+  }
+}
+@include iphone{
+  .banner{
+      h2{
+          padding-top: 33%;
+      }
+  }
+}
+
+//首頁-最新消息
+
+.homeNews{
+  padding: 40px 0;
+  background-image: url(https://media.istockphoto.com/id/800882236/zh/%E5%90%91%E9%87%8F/%E7%84%A1%E7%B8%AB%E9%AB%98%E7%88%BE%E5%A4%AB%E7%90%83%E6%A8%A1%E5%BC%8F.jpg?s=612x612&w=0&k=20&c=NgrVz705y2pGF4mv9AqyNaReCIW7h68uYKvxWFeXCIw=);
+  h3{
+      font-size: $font-s-32;
+      margin-bottom: 20px;
+  }
+  .homeNewFlex{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+      .homeNews-section{
+          padding: 20px 24px;
+          border: 1px solid rgba(0, 0, 0, 0.3);
+      }
+      .News{
+          margin-bottom: 20px;
+          h4{
+              font-size: $font-s-28;
+          }
+          p{
+              color:#ef7f1e;
+              font-size: $font-s-24;
+              a{
+                  color: #1985c3;
+                  margin-left: 5px;
+              }
+          }
+      }
+  }
+  .homeNews-img{
+      max-width: 100%;
+      height: 0 auto;
+      img{
+          width: 683px;
+          height: 350px;
+          object-fit: cover;
+      }
+  }
+}
+
+@include pad{
+  .homeNews{
+      .homeNewFlex{
+          flex-wrap: wrap;
+      }
+      .homeNews-section{
+          width: 100%;
+      }
+      .homeNews-img{
+          width: 100%; height: 100%;
+          img{
+              width: 100%;
+          }
+      }
+  }
+}
+@include iphone{
+  .homeNews{
+      .homeNewFlex{
+          .News{
+              h4{
+                  font-size: $font-s-24;
+              }
+              p{
+                  font-size: $font-s-18;
+              }
+          }
+      }
+  }
+}
+
+//首頁-目前排行榜
+.competition{
+  background-image: url(https://media.istockphoto.com/id/825397576/zh/%E7%85%A7%E7%89%87/%E9%AB%98%E7%88%BE%E5%A4%AB%E7%90%83%E5%9C%A8%E7%90%83%E6%A3%92%E4%B8%8A%E8%8D%89%E9%A0%82%E8%A6%96%E5%9C%96.jpg?s=612x612&w=0&k=20&c=V3tV4mJR1pctU4aGbvV8ojSlnZiz87rBpJxNiKZP25Q=);
+  padding: 40px 0;
+  .container{
+    h3{
+      font-size: $font-s-32;
+      margin-bottom: 20px;
+    }
+    .rankTable{
+      display:flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 24px;
+      h4{
+        font-size: $font-s-28;
+        color:#070b07;
+        margin-bottom: 10px;
+      }
+      .h-ranking{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .table{
+          width: 620px;
+          padding: 0; margin: 0;
+          tr{
+            font-size: $font-s-24;
+            text-align: center;
+            .fi{
+              font-size: $font-s-30;
+            }
+          }
+        }
+        
+      }
+      
+    }
+  }
+}
+
+@include pad{
+  .competition{
+    padding: 40px 12px;
+    .container{
+      .rankTable{
+        flex-direction: column;
+        flex-wrap: wrap;
+        h4{
+          margin-bottom: 10px;
+        }
+        .h-ranking{
+          max-width: 100%;
+          .table{
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include iphone{
+  .competition{
+    padding: 40px 12px;
+    .container{
+      h3{
+        font-size: $font-s-26;
+      }
+      .rankTable{
+        h4{
+          font-size: $font-s-24;
+        }
+        .h-ranking{
+          max-width: 100%;
+          .table{
+            width: auto;
+            tr, th{
+              font-size: $font-s-18;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//首頁-選手專區
+.homeAthlete{
+  background-image: url(https://media.istockphoto.com/id/1169537956/zh/%E7%85%A7%E7%89%87/%E9%AB%98%E7%88%BE%E5%A4%AB%E7%90%83%E5%9C%A8%E7%BE%8E%E9%BA%97%E7%9A%84%E9%AB%98%E7%88%BE%E5%A4%AB%E7%90%83%E5%A0%B4%E7%9A%84%E7%B6%A0%E8%89%B2%E8%8D%89%E5%9D%AA%E4%B8%8A.jpg?s=612x612&w=0&k=20&c=aCENk0QXlJ-dCHfmpcLaCHavlL0H0jBriwPrTchqgpM=);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+  padding: 40px 12px;
+  .container{
+    h3{
+      font-size: $font-s-32;
+      margin-bottom: 20px;
+    }
+    
+    .swiper {
+      width: 100%;
+      background-image: none;
+  }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 375px;height: 375px;
+      object-fit: cover;
+    }
+    
+    .homeCard{
+      display: flex;
+      align-items: center;
+      height: 100%;
+      justify-content: space-between;
+      .homeCardItem{
+        padding-bottom: 10px;
+        justify-content: center;
+        a{
+          text-decoration: none;
+          color:#000;
+          text-align: center;
+        }
+      }
+      h4{
+        font-size: $font-s-24;
+        margin: 10px 0 0 10px;
+      }
+      p{
+        font-size: $font-s-20;
+        margin: 0 0 0 10px;
+      }
+    }
+  }
+}
+
+@include pad{
+  .swiper {
+    padding: 40px 12px;
+    width: 100%;
+      .homeCard{
+        flex-direction: row;
+      }
+  }
+  .swiper-slide img {
+      display: block;
+      width: 100%;height: 375px;
+      object-fit: cover;
+  }
+}
+
+@include iphone{
+  .swiper{
+    width: 100%;
+  }
+  .swiper-slide img {
+    margin: 0 auto;
+    display: block;
+    width: 80%;
+    object-fit: cover;
+  }
+}
+
+//首頁-高爾夫球知識站
+.homeKnow{
+  background-image:url(https://media.istockphoto.com/id/1454927838/zh/%E7%85%A7%E7%89%87/golf-ball-on-tee-in-the-evening-golf-course-with-sunshine-background.jpg?s=612x612&w=0&k=20&c=NVg-Vau1B7QrJv5ew7wS_zSomsAAD-iFKtvcLX9zvvc=);
+  background-repeat: no-repeat;
+  background-position: center center ;
+  background-size: cover;
+  object-fit: cover;
+  padding: 80px 12px;
+  height: 100%;
+  .container{
+    margin: 0 auto;
+    h3{
+      font-size: $font-s-32;
+      margin-bottom: 20px;
+    }
+    .homeTabs {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: start;
+      -moz-column-gap: 5px;
+      column-gap: 5px;
+      width: 650px;
+      input {
+        display: none;
+      }
+      input{
+        &:checked + label {
+          color: #18491f;
+          background-color: white;
+          transform: translatey(1px);
+          font-size: $font-s-24;
+        }
+        &:checked + label + .tab-content{
+          display: block;
+        }
+      }
+      label {
+        padding: 5px 10px;
+        color: #000;
+        font-size: $font-s-24;
+        align-items: center;
+        border: 1px solid #ccc;
+        border-bottom: unset;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        cursor: pointer;
+        order: 0;
+      }
+      .tab-content {
+        background-color: #18491f;
+        color:#ffffff;
+        font-size: $font-s-20;
+        display: none;
+        padding: 1em;
+        width: 800px; height: 100%;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        order: 1;
+        text-indent: 2rem;
+        .firstSpan{
+          display: block;
+          text-decoration: none;
+          color: orange;
+          text-align: end;
+        }
+        .secSpan{
+          display: none;
+        }
+      }
+    }
+  }
+  
+}
+
+@include pad{
+  .homeKnow{
+    padding: 40px 12px;
+    .homeTabs{
+      display: flex;
+      margin: 0 auto;
+      .tab-content{
+        width: 100%;
+        .firstSpan{
+          display: block;
+          text-decoration: none;
+          color: orange;
+          text-align: end;
+        }
+        .secSpan{
+          display: none;
+        }
+      }
+    }
+  }
+}
+@include iphone{
+  .homeKnow{
+    padding: 40px 12px;
+  }
+  .homeTabs{
+    max-width: 100%;
+  }
+  .tab-content{
+    .firstSpan{
+      display: block;
+      text-decoration: none;
+      color: orange;
+      text-align: end;
+    }
+    .secSpan{
+      display: none;
+    }
+  }
+}
+
+
+//首頁-高爾夫球場地
+.homeCourses{
+  padding: 40px 12px;
+  background-image: url(https://media.istockphoto.com/id/1481452587/zh/%E5%90%91%E9%87%8F/seamless-green-golf-ball-texture-background.jpg?s=612x612&w=0&k=20&c=xH2DXl2o9wFXPMXwYF_q_uT-3j3IVqu9R_zKoZN3ji4=);
+  .container{
+    h3{
+      font-size: $font-s-32;
+      margin-bottom: 20px;
+    }
+  }
+  .homeCoursesTabs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    -moz-column-gap: 5px;
+    column-gap: 5px;
+    input {
+      display: none;
+    }
+    input{
+      &:checked + label {
+        color: #18491f;
+        background-color: white;
+        transform: translatey(1px);
+        font-size: $font-s-24;
+      }
+      &:checked + label + .homeCoursesTab-content{
+        display: block;
+      }
+    }
+    .homeCoursLable {
+      padding: 5px 10px;
+      color: #142309;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-bottom: unset;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      cursor: pointer;
+      order: 0;
+      width: 190px;
+      font-size: $font-s-24;
+    }
+    .homeCoursesTab-content {
+      display:none;
+      padding: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      order: 1;
+      .homeCourseSplit{
+        display: flex;
+        justify-content: start;
+        gap: 24px;
+        .homeCourseImg{
+          max-width: 100%;
+          img{
+            width: 350px; height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+      .homeCourseContent{
+        width: 100%;
+        .homeCourseBtn{
+          text-decoration: none;
+          float: right;
+          margin-top: 10px;
+        }
+        .homeCourseItem{
+          h4{
+            font-size: $font-s-20;
+          }
+          p{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include pad{
+  .homeCourseSplit{
+    flex-direction: column;
+    .homeCourseImg{
+      height: 216px;
+    }
+    
+  }
+}
+
+@include iphone{
+  .homeCourseSplit{
+    flex-direction: column;
+    .homeCourseImg{
+      max-height: 100%;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./layout/head'); -%>
+    <title>高球巡禮 - 選手資訊</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <!--選手資訊-banner-->
+    <section class="banner">
+        <div class="container">
+          <h2 data-aos="fade-right">選手資訊</h2>
+        </div>
+    </section>
+
+    <!--選手資訊-個人資訊頁-->
+    <div class="altheteSection">
+        <div class="container">
+            <!-- 麵包屑 -->
+            <nav class="bread" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="althete.html">選手專區</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">選手資訊</li>
+                </ol>
+            </nav>
+
+            <!-- 標題: 選手名稱 -->
+            <h3 data-aos="fade-down">選手: <span>Jon Rahm Rodríguez</span></h3>
+
+            <!-- 選手圖片 + 介紹 -->
+            <div class="althPicProduct">
+                <img data-aos="fade-up" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Jon_Rahm.png/375px-Jon_Rahm.png" alt="喬恩·拉姆">
+                <div class="althInfo" data-aos="fade-up">
+                    <h4>姓名:喬恩·拉姆  Jon Rahm Rodríguez</h4>
+                    <p class="contry">國籍: 西班牙</p>
+                    <p class="introduce">介紹: <br>
+                        是西班牙的一位職業高爾夫球運動員。他曾是世界業餘高爾夫球
+                        手排行榜的積分首位選手。2020年7月，他的世界排名達到第一位。
+                        2021年，他贏得美國公開賽冠軍，成為第一個獲得美國公開賽冠軍
+                        的西班牙人。這也是他第一個四大賽冠軍，世界排名也升至第一。
+                        2023年，他贏得美國名人賽冠軍。</p>
+                </div>
+            </div>
+            <!-- 選手戰績表格 -->
+            <table class="table text-center table-sm" data-aos="fade-down">
+                <thead>
+                    <tr>
+                        <th scope="col">目前世界排名 </th>
+                        <th scope="col">名人賽</th>
+                        <th scope="col">美國公開賽</th>
+                        <th scope="col">英國公開賽</th>
+                        <th scope="col">PGA錦標賽</th>
+                        <th scope="col">平均積分</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> 1</td>
+                        <td>冠軍: 2023</td>
+                        <td>冠軍: 2021 </td>
+                        <td>T3: 2021</td>
+                        <td>T4: 2018</td>
+                        <td> 9.5152</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <%- include('./layout/footer'); -%>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

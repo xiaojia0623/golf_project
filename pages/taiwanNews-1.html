@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./layout/head'); -%>
+    <title>高球巡禮 - 最新消息</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="singleNewsSection">
+        <div class="container">
+            <!-- 麵包屑 -->
+            <nav class="bread" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="news.html">最新消息</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">文章</li>
+                </ol>
+            </nav>
+
+            <!-- 最新消息- 文章內容 -->
+            <div class="newsContentSection">
+                <div class="contentPicture">
+                    <img class="img-fluid" src="https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2023/08/04/realtime/23737864.jpg&x=0&y=0&sw=0&sh=0&sl=W&fw=800&exp=3600&w=930&nt=1" alt="">
+                </div>
+                <a href="#"  class="shareIcon">
+                    <span class="material-symbols-outlined">share</span>
+                    <p>分享</p>
+                </a>
+                <p class="graph-color">經濟日報／ 記者嚴雅芳／台北即時報導<span>2023-08-04 13:24</span></p>
+            </div>
+
+            <div class="ContentNews">
+                <h1>雄獅Ｘ星宇首辦海外高球賽 一桿進洞就送頭等艙機票</h1>
+                <p>雄獅（2731）深耕運動旅遊市場，配合星宇航空8月15日即將開航菲律賓克拉克，攜手推出「4天3夜星宇航空海外高爾夫巡迴賽」主題遊程，每人45,900元起，即日起開放星宇航空COSMILE會員購買，8月7日全面對外販售，
+                    首戰將於11月13日舉辦，前往曾被Top 100 Golf Courses評選克拉克最佳Luisita Golf & Country Club，以及Mimosa Plus Golf Course、Pradera Verde Golf & Country Club等知名球場揮桿，參賽者除可獲得
+                    精美獨家贈禮外，並有機會獲得星宇航空台北－洛杉磯頭等艙來回機票、商務艙機票、萬元折價券、住宿券等大獎，總價值超過百萬元，8月15日前4人報名即可享最高8,000元折扣。</p>
+
+                <p>雄獅指出，目前國內外各大運動賽事與海外球敘以恢復至疫情前七成以上水準，加上後疫情時代民眾更重視自身健康，因此雄獅與星宇航空合作舉辦「星宇航空海外高爾夫巡迴賽」，精選當地最精緻的食宿與球場，
+                    並提供球友額外一件球具免費託運外，亦準備豐富獎項與活動吸引球友們同場球敘，隨團更安排攝影師同行，記錄專屬自己的閃耀揮桿時刻，有高球女神稱號的台灣女子高爾夫協會理事姚祐琳也將同場進行球敘交流。</p>
+                    
+                <p>隨著運動旅遊風氣蔚為風潮，雄獅除擁有自身高爾夫球隊並定期舉辦球敘外，亦擁有豐富的高爾夫球賽事活動策劃與舉辦經驗，曾舉辦海內外逾20場以上之高爾夫球比賽。此外，雄獅已取得德國柏林馬拉松、澳洲雪梨馬拉松、
+                    日本能登半島自行車400公里挑戰賽等世界知名運動賽事保證名額，期望透過稀缺資源整合，提供多元且豐富的旅遊商品選擇。
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

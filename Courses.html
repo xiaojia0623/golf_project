@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- google fonts links -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&family=Noto+Serif:wght@400;900&family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
+<!-- google icons link -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<!-- flag icons link -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.9.2/css/flag-icons.min.css"/>
+<!-- bootstrap css link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap-grid.min.css" integrity="sha512-2cWcZ9cbPMZFm2inlFOhwsBVbNMmNxKBtVXqL8OY9tXCZahhnIfXMxPCzpKqiHF2I2mOiNHNXEDUDglwd+4uYw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<!-- swiper css link -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+<!--else link-->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">    <title>高球巡禮 - 高爾夫球場地</title>
+    <script type="module" crossorigin src="/golf_project/assets/main-4dd57b0c.js"></script>
+    <link rel="stylesheet" href="/golf_project/assets/main-218bd40b.css">
+  </head>
+  <body>
+    <nav class="navbar sticky-top">
+    <div class="container navbar-menu">
+      <a href="try.html" class="nav-logoIcon">
+        <img src="/golf_project/assets/golfLogo-595ce44b.jpg" alt="logo">
+      </a>
+      <ul class="nav-menu">
+        <li class="menu"><a href="index.html">首頁</a></li> <!-- try.html-->
+        <li class="menu"><a href="news.html">最新消息</a></li>
+        <li class="menu"><a href="althete.html">選手專區</a></li>
+        <li class="menu"><a href="Knowledge.html">高爾夫球知識</a></li>
+        <li class="menu"><a href="forum.html">討論區</a></li>
+        <li class="menu"><a href="Courses.html">場地</a></li>
+        <a href="login.html" class="btn">登入</a>
+      </ul>
+    </div>
+</nav>
+<!-- navbar mobile can watch -->
+<div class="navbar-mobile-top">
+    <div class="container">
+        <a href="#"><img src="/golf_project/assets/golfLogo-595ce44b.jpg" alt="logo-icon"></a>
+        <div class="bar-icon" id="topBar">
+          <a href="#"><span class="material-symbols-outlined">menu</span></a>
+        </div>
+    </div>
+</div>
+<!-- navbar menu mobile can watch -->
+<div class="mobile-menu" id="topMenu">
+  <ul class="nav-menu">
+    <li class="menuMobile"><a href="index.html">首頁</a></li>
+    <li class="menuMobile"><a href="news.html">最新消息</a></li>
+    <li class="menuMobile"><a href="althete.html">選手專區</a></li>
+    <li class="menuMobile"><a href="knowledge.html">高爾夫球知識</a></li>
+    <li class="menuMobile"><a href="forum.html">討論區</a></li>
+    <li class="menuMobile"><a href="courses.html">場地</a></li>
+    <a href="logIn.html" class="btn">登入</a>
+  </ul>
+</div>
+    <!--高爾夫球場地-banner-->
+    <section class="banner">
+        <div class="container">
+          <h2 data-aos="fade-right">高爾夫球場地</h2>
+        </div>
+    </section>
+
+    <!--高爾夫球場地-地區選項-->
+    <section class="courses">
+      <div class="container">
+        <!--地區選項-->
+        <div class="areaZone">
+          <h3 class="fs-5">國內/外地區: </h3>
+          <select class="form-select" aria-label="Default select example">
+              <option selected>請選擇地區</option>
+              <option disabled>-國內</option>
+              <option value="1">北部地區</option>
+              <option value="2">中部地區</option>
+              <option value="3">東部地區</option>
+              <option value="4">南部地區</option>
+              <option disabled>-國外</option>
+              <option value="5">日本</option>
+              <option value="6">韓國</option>
+              <option value="6">美國</option>
+              <option value="6">法國</option>
+              <option value="6">英國</option>
+              <option value="6">愛爾蘭</option>
+              <option value="7">紐西蘭</option>
+              <option value="8">澳洲</option>
+              <option value="9">西班牙</option>
+          </select>
+        </div>
+
+        <!--場地選項-->
+        <ul class="courseArea d-md-flex d-lg-flex justify-content-lg-between flex-row flex-wrap" data-aos="fade-up"
+        data-aos-anchor-placement="top-center">
+          <li class="coursesItem">
+            <a href="coursesInformation.html">
+              <img src="https://lh3.googleusercontent.com/p/AF1QipNgkFkjGrRhgNqdZfRScjeyVXd9yepv3YuvCQfR=s1360-w1360-h1020" alt="Royal Melbourne Golf Club圖">
+              <div class="areaContent">
+                <h3>澳洲</h3>
+                <p>Royal Melbourne Golf Club</p>
+              </div>
+            </a>
+            
+          </li>
+          <li class="coursesItem">
+            <a href="#">
+              <img src="https://thebettervacation.com/wp-content/uploads/2017/12/Hotchkin-Golf-Course-UK.webp" alt="霍奇金高爾夫球場圖">
+              <div class="areaContent">
+                <h3>英國</h3>
+                <p>霍奇金高爾夫球場</p>
+              </div>
+            </a>
+          </li>
+          <li class="coursesItem">
+            <a href="#">
+              <img src="https://lh3.googleusercontent.com/p/AF1QipNrIK1hHU_M9NH0o5-FKTCPWBtN3xcmi8LE7bZy=s1360-w1360-h1020" alt="台灣高爾夫俱樂部圖">
+              <div class="areaContent">
+                <h3>北部地區</h3>
+                <p>台灣高爾夫俱樂部</p>
+              </div>
+            </a>
+          </li>
+          <li class="coursesItem">
+            <a href="#">
+              <img src="https://lh3.googleusercontent.com/p/AF1QipM-OBNdDcf4ntJudQPrgFTZx9tymjNSB4VlGJCR=s1360-w1360-h1020" alt="林口高爾夫球場圖">
+              <div class="areaContent">
+                <h3>北部地區</h3>
+                <p>林口高爾夫球場</p>
+              </div>
+            </a>
+          </li>
+          <li class="coursesItem">
+            <a href="#">
+              <img src="https://images.france.fr/zeaejvyq9bhj/2CT776DqAAkiS8y6oqYUuM/71b8d3167b6ed159b6a0c148b3fe4102/BETHEMONT.jpg?w=680&h=298&q=70&fm=webp&fit=fill" alt="貝特蒙球場圖">
+              <div class="areaContent">
+                <h3>法國</h3>
+                <p>貝特蒙球場</p>
+              </div>
+            </a>
+          </li>
+          <li class="coursesItem">
+            <a href="#">
+              <img src="https://lh3.googleusercontent.com/p/AF1QipMGGCOzRwzfwvshUM8NAFgoN17qEbEvX5jTeA9G=s1360-w1360-h1020" alt="Old Chatham GolfClub圖">
+              <div class="areaContent">
+                <h3>美國</h3>
+                <p>Old Chatham GolfClub</p>
+              </div>
+            </a>
+          </li>
+          <li class="coursesItem">
+            <a href="#">
+              <img src="https://lh3.googleusercontent.com/p/AF1QipNDv-_SpV2_1qKBg5chMydzWHVwHUuUnUMnmEzr=s1360-w1360-h1020" alt="礁溪高爾夫俱樂部圖">
+              <div class="areaContent">
+                <h3>東部地區</h3>
+                <p>礁溪高爾夫俱樂部</p>
+              </div>
+            </a>
+          </li>
+          <li class="coursesItem">
+            <a href="#">
+              <img src="https://lh3.googleusercontent.com/p/AF1QipPvX4CjQLvA3uQIx1wy5y6k6IxdPaASxmTmLo0y=s1360-w1360-h1020" alt="嘉南高爾夫球場圖">
+              <div class="areaContent">
+                <h3>南部地區</h3>
+                <p>嘉南高爾夫球場</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <!--新聞-下方中間頁碼-->
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+              <li class="page-item">
+                  <a class="page-link border-0" href="#" aria-label="Previous">
+                  <span aria-hidden="true"><i class="bi bi-chevron-left"></i></span>
+                  </a>
+              </li>
+              <li class="page-item"><a class="page-link border-0" href="#">1</a></li>
+              <li class="page-item"><a class="page-link border-0" href="#">2</a></li>
+              <li class="page-item"><a class="page-link border-0" href="#">3</a></li>
+              <li class="page-item">
+                  <a class="page-link border-0" href="#" aria-label="Next">
+                  <span aria-hidden="true"><i class="bi bi-chevron-right"></i></span>
+                  </a>
+              </li>
+          </ul>
+      </nav>
+      </div>
+    </section>
+
+
+
+
+
+
+    <footer class="footer">
+    <p>@CopyRight六角學院專題-高球巡禮，僅限練習用</p>
+  </footer>    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+  </body>
+</html>

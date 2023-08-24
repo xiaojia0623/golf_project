@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- google fonts links -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&family=Noto+Serif:wght@400;900&family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
+<!-- google icons link -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<!-- flag icons link -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.9.2/css/flag-icons.min.css"/>
+<!-- bootstrap css link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap-grid.min.css" integrity="sha512-2cWcZ9cbPMZFm2inlFOhwsBVbNMmNxKBtVXqL8OY9tXCZahhnIfXMxPCzpKqiHF2I2mOiNHNXEDUDglwd+4uYw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<!-- swiper css link -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+<!--else link-->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">    <title>高球巡禮 - 高爾夫球知識站</title>
+    <script type="module" crossorigin src="/golf_project/assets/main-4dd57b0c.js"></script>
+    <link rel="stylesheet" href="/golf_project/assets/main-218bd40b.css">
+  </head>
+  <body>
+    <nav class="navbar sticky-top">
+    <div class="container navbar-menu">
+      <a href="try.html" class="nav-logoIcon">
+        <img src="/golf_project/assets/golfLogo-595ce44b.jpg" alt="logo">
+      </a>
+      <ul class="nav-menu">
+        <li class="menu"><a href="index.html">首頁</a></li> <!-- try.html-->
+        <li class="menu"><a href="news.html">最新消息</a></li>
+        <li class="menu"><a href="althete.html">選手專區</a></li>
+        <li class="menu"><a href="Knowledge.html">高爾夫球知識</a></li>
+        <li class="menu"><a href="forum.html">討論區</a></li>
+        <li class="menu"><a href="Courses.html">場地</a></li>
+        <a href="login.html" class="btn">登入</a>
+      </ul>
+    </div>
+</nav>
+<!-- navbar mobile can watch -->
+<div class="navbar-mobile-top">
+    <div class="container">
+        <a href="#"><img src="/golf_project/assets/golfLogo-595ce44b.jpg" alt="logo-icon"></a>
+        <div class="bar-icon" id="topBar">
+          <a href="#"><span class="material-symbols-outlined">menu</span></a>
+        </div>
+    </div>
+</div>
+<!-- navbar menu mobile can watch -->
+<div class="mobile-menu" id="topMenu">
+  <ul class="nav-menu">
+    <li class="menuMobile"><a href="index.html">首頁</a></li>
+    <li class="menuMobile"><a href="news.html">最新消息</a></li>
+    <li class="menuMobile"><a href="althete.html">選手專區</a></li>
+    <li class="menuMobile"><a href="knowledge.html">高爾夫球知識</a></li>
+    <li class="menuMobile"><a href="forum.html">討論區</a></li>
+    <li class="menuMobile"><a href="courses.html">場地</a></li>
+    <a href="logIn.html" class="btn">登入</a>
+  </ul>
+</div>
+    <!--知識站-banner-->
+    <section class="banner">
+        <div class="container">
+          <h2 data-aos="fade-right">高爾夫球知識站</h2>
+        </div>
+    </section>
+
+    <!--知識站-分頁標籤區-->
+    <section class="knowledge py-5 header">
+        <div class="container py-4">
+          <div class="row">
+            <div class="col-md-3">
+                <!-- Tabs nav -->
+                <div class="nav flex-column nav-pills nav-pills-custom text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical" data-aos="fade-up">
+                    <a class="nav-link mb-3 p-3 shadow active" id="v-pills-golfHistory-tab" data-toggle="pill" href="#v-pills-golfHistory" role="tab" aria-controls="v-pills-golfHistory" aria-selected="true">
+                        <i class="fa fa-user-circle-o mr-2"></i>
+                        <span class="small text-uppercase">高爾夫歷史</span></a>
+
+                    <a class="nav-link mb-3 p-3 shadow" id="v-pills-GolfCourse-tab" data-toggle="pill" href="#v-pills-GolfCourse" role="tab" aria-controls="v-pills-GolfCourse" aria-selected="false">
+                        <i class="fa fa-calendar-minus-o mr-2"></i>
+                        <span class="small text-uppercase">高爾夫球場</span></a>
+
+                    <a class="nav-link mb-3 p-3 shadow" id="v-pills-par-tab" data-toggle="pill" href="#v-pills-par" role="tab" aria-controls="v-pills-par" aria-selected="false">
+                        <i class="fa fa-star mr-2"></i>
+                        <span class="small text-uppercase">標準桿</span></a>
+
+                    <a class="nav-link mb-3 p-3 shadow" id="v-pills-Caddy-tab" data-toggle="pill" href="#v-pills-Caddy" role="tab" aria-controls="v-pills-Caddy" aria-selected="false">
+                        <i class="fa fa-check mr-2"></i>
+                        <span class="small text-uppercase">球僮</span>
+                    </a>
+                    <a class="nav-link mb-3 p-3 shadow" id="v-pills-golfer-tab" data-toggle="pill" href="#v-pills-golfer" role="tab" aria-controls="v-pills-golfer" aria-selected="false">
+                      <i class="fa fa-check mr-2"></i>
+                      <span class="small text-uppercase">職業高爾夫球手</span>
+                    </a>
+                    <a class="nav-link mb-3 p-3 shadow" id="v-pills-golfCar-tab" data-toggle="pill" href="#v-pills-golfCar" role="tab" aria-controls="v-pills-golfCar" aria-selected="false">
+                      <i class="fa fa-check mr-2"></i>
+                      <span class="small text-uppercase">高球車</span>
+                    </a>
+                    <a class="nav-link mb-3 p-3 shadow" id="v-pills-PresidentsCup-tab" data-toggle="pill" href="#v-pills-PresidentsCup" role="tab" aria-controls="v-pills-PresidentsCup" aria-selected="false">
+                      <i class="fa fa-check mr-2"></i>
+                      <span class="small text-uppercase">總統杯</span>
+                    </a>
+                    <a class="nav-link mb-3 p-3 shadow" id="v-pills-RyderCup-tab" data-toggle="pill" href="#v-pills-RyderCup" role="tab" aria-controls="v-pills-RyderCup" aria-selected="false">
+                      <i class="fa fa-check mr-2"></i>
+                      <span class="small text-uppercase">萊德盃</span>
+                    </a>
+                    <a class="nav-link mb-3 p-3 shadow" id="v-pills-holeInOne-tab" data-toggle="pill" href="#v-pills-holeInOne" role="tab" aria-controls="v-pills-holeInOne" aria-selected="false">
+                      <i class="fa fa-check mr-2"></i>
+                      <span class="small text-uppercase">一桿進洞</span>
+                    </a>
+                    <a class="nav-link mb-3 p-3 shadow" id="v-pills-StrokePlay-tab" data-toggle="pill" href="#v-pills-StrokePlay" role="tab" aria-controls="v-pills-StrokePlay" aria-selected="false">
+                      <i class="fa fa-check mr-2"></i>
+                      <span class="small text-uppercase">比杆賽</span>
+                    </a>
+                    <a class="nav-link mb-3 p-3 shadow" id="v-pills-matchPlay-tab" data-toggle="pill" href="#v-pills-matchPlay" role="tab" aria-controls="v-pills-matchPlay" aria-selected="false">
+                      <i class="fa fa-check mr-2"></i>
+                      <span class="small text-uppercase">比洞賽</span>
+                    </a>
+                    <a class="nav-link mb-3 p-3 shadow" id="v-pills-FourMajorCompet-tab" data-toggle="pill" href="#v-pills-FourMajorCompet" role="tab" aria-controls="v-pills-FourMajorCompet" aria-selected="false">
+                      <i class="fa fa-check mr-2"></i>
+                      <span class="small text-uppercase">四大賽</span>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="col-md-9">
+                <!-- Tabs content -->
+                <div class="tab-content" id="v-pills-tabContent" data-aos="fade-up">
+                  <!-- 高爾夫球歷史 -->
+                  <div class="tab-pane fade shadow rounded  show active p-5" id="v-pills-golfHistory" role="tabpanel" aria-labelledby="v-pills-golfHistory-tab">
+                        <h4 class="mb-4">高爾夫球歷史</h4>
+                        <p class="font-italic text-muted mb-2">
+                          高爾夫運動的確切起源已不可考，目前最廣為接受的說法是起源於中世紀的蘇格蘭。
+                        </p>
+                        <h5>起源</h5>
+                        <p class="mb-3">
+                          第一個被記錄的高爾夫球類似運動是西元1297年2月26日，在荷蘭的費赫特河畔盧嫩鎮舉辦。參加者使用棍子和皮製的球，用最少擊球次數而將球打
+                          進數百公尺外的人贏得比賽。但是今日的高爾夫球運動普遍被認為是蘇格蘭人所發明，因為在
+                          中世紀時，蘇格蘭議會曾經兩次明文規定禁止玩一種名為「gowf」的比賽。但是也有學者認為這個
+                          名為gowf的比賽應該是類似於shinty、板棍球或是草地曲棍球，而不是高爾夫。他們認為這種用高爾
+                          夫球桿把球擊打進地面小洞的比賽應該最早出現於17世紀的荷蘭。而在名稱方面，該派學者也認為高爾
+                          夫"golf"可能是蘇格蘭人將荷蘭文中的"kolf"（棍棒、球桿）加以變化而成。這些證據傾向高爾夫起源於歐洲大陸。
+                        </p>
+                        <p>
+                          但是這些早期的運動充其量只能視為近代高爾夫運動的概念起源，真正完整的近代高爾夫運動是從蘇格蘭開始發展的，包括了第一個高爾夫球場與高
+                          爾夫俱樂部。一場打18洞的高爾夫運動基本規則就是在那所創立的，而史上第一個高爾夫巡迴錦標賽也是在蘇格蘭的城市間舉辦。
+                          不久後，現代化的高爾夫運動就由蘇格蘭傳往英格蘭，之後普及到全世界。雖然謠傳蘇格蘭女王瑪麗一世曾在1567年玩過正式的高爾
+                          夫，但是真正有記載最古老的正式高爾夫比賽是1672年在Musselburgh Racecourse的一個高爾夫球場舉行。1754年，皇家古老高爾
+                          夫俱樂部成立，是目前世界最古老的高爾夫俱樂部。
+                        </p><hr>
+                        <h5>名稱起源</h5>
+                        <p>
+                          高爾夫golf這個字第一次出現在書面資料是在1457年Scottish statute中禁止一種叫gouf的比賽[7]，這個字可能是從蘇格蘭文的goulf（意為"打擊"）
+                          變化而來，但是這個字也有可能是從荷蘭文的kolf（意為"球棒"、"球桿"）轉變而來。但是有更早的文獻指出，1452年時蘇格蘭國王詹姆斯二世禁止
+                          了這種運動，以免他的部下沉迷而荒廢了箭術練習[8]。
+
+                          關於高爾夫的都市傳說中則指出GOLF的由來是"Gentlemen Only, Ladies Forbidden"（男人專用，女性止步）的首字母縮略字。但是這只是從GOLF
+                          這四個字去逆推而出的謬誤而已。
+                        </p><hr>
+                        <h5>用具發展</h5>
+                        <div class="picFlex d-flex justify-content-center">
+                          <p class="me-2 pe-2">
+                            高爾夫的演進史大致上就是用具的發展史，而最重要的當屬高爾夫球的進化了。早年高爾夫球的材質、外觀、大小都不一致，直到1930年代美國高爾夫球協
+                            會 (USGA) 設定了高爾夫球標準的重量跟大小[4]。隨後USGA又提出了正式的規則，明定高爾夫球的初速不可高於每秒250英尺。
+
+                            <br>球桿是另一個重要的高爾夫用具，早期球桿皆由木製而成，因為材料容易取得。經過數年的發展，山胡桃木成為製作球桿的標準木材，而高級球桿則使用美國柿樹製作，因為它硬度佳並且耐用。
+                          </p>
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Metal_clubs.jpg" alt="用具發展球桿圖">
+                        </div>
+                  </div>
+                    
+                  <!-- 高爾夫球場 -->
+                  <div class="tab-pane fade shadow rounded  p-5" id="v-pills-GolfCourse" role="tabpanel" aria-labelledby="v-pills-GolfCourse-tab">
+                        <h4 class="mb-4">高爾夫球場</h4>
+                        <p class="font-italic text-muted mb-2">
+                          高爾夫球場，也稱為高球場（英語：Golf course）是進行高爾夫球和足球高爾夫運動時所需的場地。一個標準的高爾夫球場包括
+                          18個洞（Hole）。有的高爾夫球場僅有9個洞，也有的有27或36個洞。每個洞都有規定的桿數，稱為標準桿。標準桿數為72桿。
+                          球場內有發球檯、球道、果嶺、長草、沙坑、水池等障礙組成。不同的高爾夫球場之間有著巨大的差距，對於不同類型的選手會產生
+                          很大的影響。一些高爾夫球場由知名的高爾夫選手所設計。此外，有的高爾夫球場還會附帶練習場地。
+                        </p>
+                        <p>
+                          由於高爾夫球場須廣大的面積及良好的草皮，因此興建與維護成本較大，一些會員制高爾夫球場所發行的會員證價格高昂，甚至可視為有價證券。一些地方設有
+                          獨立的高爾夫練習場，設有發球檯可供揮桿練習，費用較低廉，佈局類似棒球、壘球的打擊練習場。
+                        </p><hr>
+                        <h5>高爾夫球場的組成部分</h5>
+                        <div class="picFlex d-flex justify-content-center">
+                          <div class="teBox" style="width: 100%;">
+                            <h6><strong>發球檯</strong></h6>
+                            <p class="mb-3">
+                              每一個球洞都由發球檯開始，而且通常都有多於一個發球檯，以顏色區分難度。通常發球檯的地面都會較為平坦，
+                              青草會被剪短至與果嶺差不多的長度。發球檯上會放置兩個有顏色的標誌，球員可以在標誌後兩支球桿以內的長方形區
+                              域內發球。紅色發球檯由於離果嶺最近，多為女子使用。較遠的黃色發球檯可供初學者或長者使用。一般男子球員會
+                              使用白色發球檯。而最遠的藍色或黑色發球檯則為職業選手或比賽時使用。發球檯是高爾夫球場內唯一可以使用
+                              球座（Tee）的地方，所以發球檯又稱「梯台」（Tee Box）。
+                            </p>
+                            <h6><strong>拋球區</strong></h6>
+                            <p class="mb-3">
+                              可以位於球道的前端，供發球失誤時使用。當球員發球失誤時，他可以選擇再次發球，或到拋球區在加罰一桿的前提下繼續打球。
+                            </p>
+                            <h6><strong>障礙</strong></h6>
+                            <p class="mb-3">
+                              高爾夫球場上的障礙可以是水障礙，例如溪流、水池或湖泊，亦可以是沙坑或者在興建球場之前已經存在的古舊建築遺跡甚至是墳墓。
+                            </p>
+                            <h6><strong>沙坑</strong></h6>
+                            <p class="mb-3">
+                              沙坑可以位於球道上或果嶺旁邊[8]，將球從沙坑中打出來有其特別的技巧[9]，由於沙坑通常是一座低窪的深坑，會與球道有一定的
+                              高低落差，且大多數時候球落在沙坑時會陷入沙子內，因此大多數職業選手會使用大角度鐵桿或者挖起桿以「掘沙」的方式，擊打球底
+                              下的沙子，並將球以高彈道球的擊球路徑帶出沙坑外；而在高爾夫規則中，於非擊球時將球桿碰觸到沙坑表面會被認為是整平沙坑的不
+                              當舉動，而會被罰兩桿，因此也增加了在沙坑中擊球的難度，並大大減少了擊球的距離與準確度。
+                            </p>
+                            <p>高爾夫球員在沙坑擊球完畢之後，該球員或是桿弟必須將沙坑用高爾夫沙耙將沙坑裡的腳印與球痕整平，以避免影響下一組球員擊球，
+                              在部分職業賽事當中，亦有賽事人員協助球員整理沙坑。</p>
+                          </div>
+                          <div class="TeeCard" style="width: 100%;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Golf_field.svg/255px-Golf_field.svg.png" class="card-img-top" alt="球場的組成部分圖">
+                            <div class="card-body">
+                              <p class="card-text">
+                                高爾夫球場的組成部分:
+                                <ul class="d-flex flex-row flex-wrap mx-2">
+                                  <li>1 = 發球檯</li>
+                                  <li>2 = 水障礙</li>
+                                  <li>3 = 長草區</li>
+                                  <li>4 = 界外</li>
+                                  <li>5 = 沙坑</li>
+                                  <li>6 = 水池</li>
+                                  <li>7 = 球道</li>
+                                  <li>8 = 果嶺</li>
+                                  <li>9 = 旗桿</li>
+                                  <li>10 = 球洞</li>
+                                </ul>
+                              </p>
+                            </div>
+                          </div>
+                        </div><hr>
+                        <div class="picFlex d-flex justify-content-center">
+                          <div class="teBox ps-3" style="width:100%;">
+                            <h6><strong>球道與長草區</strong></h6>
+                            <p class="mb-3">
+                              發球區與果嶺之間，青草被平均地剪短的區域被稱為球道，球道的長度由百多碼至五百多
+                              碼不等，視乎該球洞為3、4或5標準桿球洞。發球區與果嶺之間非一定呈直線，球道可以中
+                              途轉彎一次或兩次，這種球洞被稱為「狗腿洞」或「雙狗腿洞」。球道上於特定距離會
+                              有標誌供球員參考，如離果嶺還有250、200、150、100碼等（歐洲的球場會使用公尺）。
+                            </p>
+                            <p>
+                              球道的兩側為長草區，高爾夫球落在長草區，由於揮桿時高爾夫球桿的桿頭可能被長草纏著，會比較難打。
+                            </p>
+                          </div>
+                          <div class="TeeCard border border-secondary-subtle" style="max-width:100%;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Par_4_5_dogleg.svg/390px-Par_4_5_dogleg.svg.png" class="card-img-top" alt="狗腿球道圖">
+                            <div class="card-body">
+                              <p class="card-text">
+                                狗腿球道
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                    
+
+                  <!-- 標準桿 -->
+                  <div class="tab-pane fade shadow rounded  p-5" id="v-pills-par" role="tabpanel" aria-labelledby="v-pills-par-tab">
+                        <h4 class="mb-4">標準桿</h4>
+                        <p class="font-italic text-muted mb-5">
+                          球洞會依標準桿來分類，標準桿是指球員根據設計應當完成的桿數。桿數中一定會包括發球的一桿及二個推桿，因此標準桿至少是三桿，但標準桿是四桿
+                          或五桿的球洞也很常見，甚至也有標準桿是六桿或七桿的球洞。發球以外的擊球以及推桿一般會在球道進行。例如一個有經驗的球員在標準桿四桿的球洞
+                          時，會希望在第一次擊球發球後，第二次擊球就可以將球擊到果嶺，再用二個推桿使球進洞，就可以平標準桿。若是擊球讓球上果嶺後，還留有二次推
+                          桿機會可以使球進洞，則稱為標準桿上果嶺（green in regulation），簡稱GIR。
+                        </p>
+                        <div class="standerImg d-flex justify-content-start h-100">
+                          <div class="TeeCard border border-secondary-subtle me-5 h-100" style="width: 18rem;">
+                            <img class="h-100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Golfball.jpg/360px-Golfball.jpg" class="card-img-top" alt="高爾夫球與球洞圖">
+                            <div class="card-body">
+                              <p class="card-text">
+                                高爾夫球與球洞
+                              </p>
+                            </div>
+                          </div>
+                          <div class="TeeCard border border-secondary-subtle h-100" style="width: 18rem;">
+                            <img style="height: 214px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Tee.jpg/360px-Tee.jpg" class="card-img-top" alt="開球座圖">
+                            <div class="card-body">
+                              <p class="card-text align-items-center">
+                                開球座
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                    
+                  <!-- 球僮 -->
+                  <div class="tab-pane fade shadow rounded  p-5" id="v-pills-Caddy" role="tabpanel" aria-labelledby="v-pills-Caddy-tab">
+                        <h4 class="mb-4">球僮</h4>
+                        <div class="picFlex d-flex justify-content-center">
+                          <p class="me-2 pe-2">
+                            球僮（英語：Caddie或Caddy），又稱「桿弟」，若為女性擔任則可稱「桿娣」，可以是一個職業，其職責是替高爾
+                            夫球手背球包、提供打球的意見和精神上的支持。通常的安排是一個球僮服務一個球手，一般情況下甚少會兩個或以
+                            上的球手同時使用一個球僮。在亞洲，各大私人營運的高爾夫球場多數都會有球僮團隊，部分球會會硬性要求球手聘
+                            請球僮，並於打球前登記時作出安排。在美國及歐洲，除一些高端的球會外，球僮服務已經因為球車和各種測量儀器
+                            的使用而開始式微[1]。
+                          </p>
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Suzann_Pettersen_%288700938268%29.jpg/330px-Suzann_Pettersen_%288700938268%29.jpg" alt="球僮為球手背球包圖">
+                        </div>
+                        <h5>收費</h5>
+                        <p>
+                          球僮的收費因地區而異，差別可以非常之大，在美國一般收費為每18洞80至120美元，泰國球僮的收費為200泰珠（約4.5美元）。
+
+                          職業高爾夫球手於比賽時使用的球僮，其收入是獎金的分成，由5至10%不等。以老虎伍茲的為例，由於老虎曾贏得多個大滿貫賽事，在他黃金時期跟隨
+                          他12年的球僮史蒂夫·威廉士，其累計收入達8百萬美元。
+                        </p>
+                  </div>
+
+                  <!-- 職業高爾夫球手 -->
+                  <div class="tab-pane fade shadow rounded  p-5" id="v-pills-golfer" role="tabpanel" aria-labelledby="v-pills-golfer-tab">
+                      <h4 class="mb-4">職業高爾夫球手</h4>
+                      <p class="font-italic text-muted mb-2">
+                        職業高爾夫球手，是以高爾夫球為職業，以賺取收入的運動員。在高爾夫球界，職業運動員與業餘運動員的區分受到嚴格監管。
+                        違反了規則的業餘運動員會被褫奪業餘資格，從而無法參與業餘賽事，直到其業餘資格被恢復為止。
+                      </p><hr>
+                      <h5>歷史</h5>
+                      <p>
+                        職業運動員與業餘運動員的區分源於社會階級的觀念。18、19世紀的英國，高爾夫球是富豪或貴族的玩意，早期的職業球手都是
+                        工人階級，當球僮、打理草地、製造球桿、參加挑戰賽以賺取微薄收入。高爾夫球熱潮傳至美國之初，其精英運動形象仍然被
+                        保留下來。直到沃爾特·哈根的出現，高爾夫比賽的獎金都不足以職業球手餬口。<br>
+
+                        時至今日，階級觀念已經不再相干，高爾夫球已經是相對負擔得起的運動，大部分職業球手都來自中產家庭。在錦標賽領先
+                        的高爾夫球手，其獎金非常可觀，亦因而晉身上流社會之列。
+                      </p><hr>
+                      <h5>規則</h5>
+                      <p>
+                        根據The R&A及美國高爾夫協會的規定，業餘球手每年收入的上限分別為500英鎊及750美金。如收入超過這金
+                        額，他會被視為職業球手。
+                      </p><hr>
+                      <h5>職業高爾夫球手的分類</h5>
+                      <p class="mb-3">職業高爾夫球手大致可以分為兩個類別：</p>
+                      <ul style="list-style-type: decimal;" class="ps-5">
+                        <li>絕大部分的職業球手都從事教練、球場管理、經營高爾夫球具生意等工作。</li>
+                        <li>小部分的職業球手則專門打比賽，賺取賽事獎金及品牌贊助作收入。</li>
+                      </ul>
+                   </div>
+
+                  <!-- 高球車 -->
+                  <div class="tab-pane fade shadow rounded  p-5" id="v-pills-golfCar" role="tabpanel" aria-labelledby="v-pills-golfCar-tab">
+                    <h4 class="mb-4">高球車</h4>
+                    <p class="font-italic text-muted mb-2">
+                      高球車或高爾夫球車，是一種高爾夫球球場常見的一種小型交通工具。據美國國家標準協會z130.1標準，高爾夫球車低於15英里/小時（24公里/小時）的速度短
+                      距離運送少量乘客[1]。它們通常寬約4英尺（1.2公尺）×長8英尺（2.4公尺）×高6英尺（1.8公尺），重900磅（410公斤）至1,000磅（450公斤），大多數由四衝程發動機提供動力。當此車用於一般運輸時，會被稱為Neighborhood Electric Vehicle (NEV) 。
+                    </p><hr>
+                    <h5>特點</h5>
+                    <div class="picFlex d-flex justify-content-center">
+                      <p class="me-2 pe-2">
+                        常見的高球車是主要以蓄電池作為動力能源的電動車輛，時速一般不過50公里。高球車具備體積小、時速慢、馬力小等特點，而且只有前進、轉彎等幾個簡易控掣
+                      的操作。而且汽車相比，低噪音、較環保，同時亦較少發生致命的交通意外。
+                      </p>
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/E-Z-GO_golf_cart.JPG/300px-E-Z-GO_golf_cart.JPG" alt="電動高球車圖">
+                    </div>
+                    <hr>
+                    <h5>使用情況</h5>
+                    <div class="picFlex d-flex justify-content-center">
+                      <p class="ms-2 ps-2">
+                        除了高球場，高球車也用於一些室內體育館、展覽館、大學校園、沙灘中，以作為管理員的代步工具。在一些島嶼、渡假村或綠色社區，也有利用高球車取代汽車作為主要交通工具的情況。
+
+                        各地區駕駛的年齡限制有所不同，有些地區只限13歲或以上人士駕駛，亦有設為14歲、15歲、21歲或甚25歲等等。另外汽車駕駛執照作為駕駛者的必要條件，亦是則按地區而定。
+                      </p>
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/1957Fiat600MultiplaMarinella-rear.jpg/300px-1957Fiat600MultiplaMarinella-rear.jpg" alt="1957年的汽油高球車圖">
+                    </div>
+                  </div>
+
+                  <!-- 總統杯 -->
+                  <div class="tab-pane fade shadow rounded  p-5" id="v-pills-PresidentsCup" role="tabpanel" aria-labelledby="v-pills-PresidentsCup-tab">
+                    <h4 class="mb-4">總統杯</h4>
+                    <div class="picFlex d-flex justify-content-center">
+                      <p class="me-2 pe-2">
+                        總統杯（Presidents Cup）是一項兩年一度高爾夫球集體賽事，在美國代表隊和世界各國代表隊（不包含歐洲選手）之間進行。與這一賽事頗為相似但歷史更為悠久
+                        的萊德杯賽，則是歐洲選手與美國選手競爭的舞台。傳統上總統杯在偶數年舉行，而萊德杯在奇數年舉行。但2001年美國發生的911慘案導致當年的萊德杯取消，並將
+                        這兩項賽事都往後順延一年，因此目前總統杯在奇數年舉辦。賽事舉辦地往往選在美國或歐洲以外的其他國家和地區。<br><br>
+                        該賽事採用比洞賽方式決定勝負。賽制基本模仿自萊德杯，各方均有12名參賽選手及1名由經驗豐富的球手擔任的隊長。球隊隊長主要負責安排在雙人配對賽中隊員的
+                        組合以及全體球員的出場順序。比賽包括6場四人兩球賽（foursome）和6場四人四球賽（four ball），與萊德杯不同的是，在周四和周五的比賽中，雙方全體球員
+                        都需要參加對抗賽，而在周六的比賽中，各方只有兩位球員可以輪空休息，而周日的個人對抗賽也需要所有隊員上陣。
+                      </p>
+                      <img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/The_Presidents_Cup_golf_trophy.jpg/450px-The_Presidents_Cup_golf_trophy.jpg" alt="總統杯圖">
+                    </div><br>
+                    <p>
+                      無論是雙人賽還是單人賽，勝利的一方都將為球隊貢獻1分。在雙人賽中，如果兩隊打平，則各得0.5分。11場雙人兩球賽、11場雙人四球賽和12場個人對抗賽總計34場比
+                      賽，總得分為34分。因此，獲取最終大賽勝利的球隊需要至少得到17.5分。與萊德杯不同，總統杯賽事要求各隊的每位球員都要參加全部雙人對抗賽，這使得各支球隊不能
+                      將最弱的選手雪藏起來。因此整體實力更強的美國隊在歷屆比賽中往往取得更好的成績。
+                    </p><br>
+                    <p>
+                      在2005年之前，比賽規定雙方隊長鬚在最後比賽日之前公布一名後備的附加賽選手，以備雙方比分相同時打破平局，決定最終勝負。但在2003年，由於光線不足的原因，附加賽在3洞過後宣布結束，最終兩隊未能分出勝負。
+                    </p>
+                    <p>
+                      總統杯比賽不設任何獎金。比賽最終產生的淨利潤將捐獻給球員、隊長和隊長助理共同決定的慈善機構。最初的六屆總統杯從世界各地共籌得善款1300萬美元[3]。從2009年起，一項面向50歲以上的球員的高級總統杯比賽被提
+                      上日程，與萊德杯或總統杯不同的是，這一賽事中，一方仍為美國隊，但另一方則是歐洲球員和世界其他各地球員的聯合隊。
+                    </p>
+
+                    <h5 class="mt-3 mb-3 sm-none">近年總統杯歷屆賽事結果 : </h5>
+                    <table class="table text-center">
+                      <tbody>
+                        <tr>
+                          <th>年份</th>
+                          <th>舉辦地</th>
+                          <th>優勝球隊</th>
+                          <th colspan="2">得分</th>
+                          <th>落敗球隊</th>
+                          <th>雙方隊長</th>
+                        </tr>
+                        <tr>
+                          <td>2022</td>
+                          <td>Quail Hollow Club<br>(美國北卡羅來納州夏洛特)</td>
+                          <td>美國隊</td>
+                          <td align="center">17½</td>
+                          <td align="center">12½</td>
+                          <td>國際隊</td>
+                          <td class="text-start">
+                            <img alt="美國" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png" decoding="async" width="22" height="12" class="mw-file-element">
+                            &#160;<a href="/w/index.php?title=%E6%88%B4%E7%BB%B4%E6%96%AF%C2%B7%E6%B4%9B%E5%A4%AB%E4%B8%89%E4%B8%96&amp;action=edit&amp;redlink=1" class="new" title="戴維斯·洛夫三世（頁面不存在）">戴維斯·洛夫三世</a><br>
+                            <img alt="南非" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_South_Africa.svg/22px-Flag_of_South_Africa.svg.png" decoding="async" width="22" height="15" class="mw-file-element">
+                            &#160;<a href="/wiki/%E7%89%B9%E9%9B%B7%E5%BC%97%C2%B7%E4%BC%8A%E6%A2%85%E7%88%BE%E6%9B%BC" title="崔佛·伊梅爾曼">崔佛·伊梅爾曼</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2019</td>
+                          <td>	Royal Melbourne Golf Club(澳洲墨爾本)</td></td>
+                          <td>美國隊</td>
+                          <td align="center">16</td>
+                          <td align="center">14</td>
+                          <td>國際隊</td>
+                          <td class="text-start">
+                            <img src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png" decoding="async" width="22" height="12" class="mw-file-element" 
+                            srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/33px-Flag_of_the_United_States.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_
+                            United_States.svg/44px-Flag_of_the_United_States.svg.png 2x" data-file-width="1235" data-file-height="650" />
+                            &#160;<a href="/wiki/%E8%80%81%E8%99%8E%E6%B4%BB%E5%A3%AB" class="mw-redirect" title="老虎活士">老虎活士</a><br>
+
+                            <img alt="南非" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_South_Africa.svg/22px-Flag_of_South_Africa.svg.png" decoding="async" width="22" height="15" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_South_Africa.svg/33px-Flag_of_South_Africa.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_South_Africa.svg/44px-Flag_of_South_Africa.svg.png 2x" data-file-width="900" data-file-height="600" />
+                            &#160;<a href="/wiki/%E5%8E%84%E5%B0%BC%C2%B7%E8%89%BE%E7%88%BE%E6%96%AF" title="厄尼·艾爾斯">厄尼·艾爾斯</a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <!-- 萊德盃 -->
+                  <div class="tab-pane fade shadow rounded p-5" id="v-pills-RyderCup" role="tabpanel" aria-labelledby="v-pills-RyderCup-tab">
+                    <h4 class="mb-4">萊德盃</h4>
+                    <p class="font-italic text-muted mb-2">
+                      萊德盃（英語：Ryder cup），全名萊德盃高爾夫球對抗賽，是一項高爾夫球頂級賽事，以森姆·萊德命名， 每兩年舉行一次，由美國隊與歐洲隊對賽。賽事於1926年由
+                      美國隊對英國隊一場表演賽揭開序幕，1927年正式舉行第一屆賽事，曾因第二次世界大戰而中斷十年，1973年至1977年期間改為美國隊對英國愛爾蘭聯隊，1979年再加入
+                      其他歐洲優秀的高爾夫球選手，變成美國隊對歐洲隊，並沿襲至今。
+                    </p>
+                    <h5>歷史</h5>
+                    <p>
+                      第二次世界大戰後比賽的恢復，以及美國隊的屢次勝利，導致從1979年開始，本賽場中的歐洲隊將「大不列顛和愛爾蘭」的範圍擴大到整個歐洲大陸，薈萃歐陸各國的高手。
+                      歐洲大陸高爾夫球手的加入部分是由於以Seve Ballesteros和Antonio Garrido為首的新一代西班牙高爾夫球手的成功。在1973年，英國隊的官方名稱從「大不列顛」改為
+                      「大不列顛和愛爾蘭」，但這只是為了反映愛爾蘭共和國的高爾夫球手一直在大不列顛打球這一事實而更改的名稱萊德杯球隊自1953年開始參賽，而北愛爾蘭選手自1947年開
+                      始參賽。除了來自英國和愛爾蘭的球員外，歐洲隊還包括來自奧地利、比利時、丹麥、法國、德國、義大利、挪威、西班牙和瑞典。
+                    </p>
+                  </div>
+
+                  <!-- 一桿進洞 -->
+                  <div class="tab-pane fade shadow rounded p-5" id="v-pills-holeInOne" role="tabpanel" aria-labelledby="v-pills-holeInOne-tab">
+                    <h4 class="mb-4">一桿進洞</h4>
+                    <p class="font-italic text-muted mb-2">
+                      一桿進洞（hole in one）是一個專門的高爾夫球用語，指自發球區開球後直接將球擊入目標球洞的情況，在高爾夫球運動中提及的頻率較高。
+                    </p>
+                    <p>
+                      一桿進洞通常發生在3桿洞，這是標準高爾夫球場距離最短的洞。而4桿洞和5桿洞對大多數高爾夫球手來說都太長了，僅有少數擅長開球的選手能實現這一壯舉。
+                      戶外高爾夫開球需要精確的擊球和強大的力量，而一桿進洞更是需要幸運。因此其它高爾夫競技中的精彩演出（如在5桿洞實現兩桿進洞的信天翁）都不如一桿進洞能給觀眾留下深刻印象。
+                    </p><hr>
+                    <h5>罕見度</h5>
+                    <p>
+                      一桿進洞非常少見。雖然高技巧可以提高一桿進洞的可能性，然而好運在實現一桿進洞中有重要要素。對實現一桿進洞的球手來說，在俱樂部酒吧請所有其他球手喝酒是傳統。
+                      《時代》雜誌曾報道在1922年，美國的高爾夫球製造了1,200次一桿進洞記錄。
+                    </p>
+                    <p>
+                      在1973年英國高爾夫公開賽上，吉恩·薩拉贊曾以71歲的年齡打出一桿進洞。Earl Dietering在78歲時創出在一輪比賽內打出兩個一桿進洞，是迄今世界最高齡的一桿進洞記錄。
+                    </p>
+                    <p>
+                      在1971年於英格蘭皇家諾維奇高爾夫俱樂部舉辦的馬丁尼國際賽上，約翰·哈德森實現連續兩洞打出一桿進洞的記錄。這也是大型職業賽事中唯一的連續實現一桿進洞的記錄。
+                    </p>
+                    <p>
+                      雖然一桿進洞十分罕見，但在萊德盃上已有過6次一桿進洞記錄。第一次是在1973年萊德盃，由彼得·巴特勒實現。20年之後，尼克·佛度在1993年萊德盃成為第二位實現這一壯
+                      舉的球手。此後科斯坦蒂諾·羅卡和霍華德·克拉克在1995年打出一桿進洞，保羅·凱西和史考特·佛普蘭克在2006年打出一桿進洞。
+                    </p>
+                    <p>
+                      2016年8月11日，賈斯汀·羅斯在2016年夏季奧林匹克運動會高爾夫比賽上實現奧運會歷史上第一個一桿進洞。
+                    </p>
+                    <hr>
+                    <h5>獎品</h5>
+                    <p>
+                      一些職業賽事會為實現一桿進洞的球手提供獎品，大多是新車或和新車價值相近的現金（有時可達約400萬美元）。這些高額獎金大多由保險公司支付。據精算師的計算，
+                      一位普通球手打出一桿進洞的機率是12,500分之1，職業球手是2,500分之1。
+                    </p><br>
+                    <h5>5桿洞的一桿進洞</h5>
+                    <p>
+                      截止2018年，僅有4次在5桿洞實現一桿進洞的記錄。曾有球手用3號鐵桿在馬蹄形5桿洞實現一桿進洞。最長距離的5桿洞一桿進洞記錄是517碼或473公尺，於
+                      2002年在丹佛的綠谷牧場高爾夫俱樂部實現。高海拔的稀薄空氣令這次壯舉得以實現。在職業賽事中，還沒有一次5桿洞的一桿進洞記錄。
+                    </p>
+                  </div>
+
+                  <!-- 比杆賽 -->
+                  <div class="tab-pane fade shadow rounded p-5" id="v-pills-StrokePlay" role="tabpanel" aria-labelledby="v-pills-StrokePlay-tab">
+                    <h4 class="mb-4">比杆賽</h4>
+                    <p class="font-italic text-muted mb-2">
+                      比杆賽（Stroke play），是高爾夫球賽中的一種主要賽制，比杆賽根據球手在數個球洞內取得的總杆數進行比較，其中杆數最低者獲得優勝。
+                      其相對於比洞賽而言，比桿賽的規則顯得更加公平，所以大多數高爾夫球賽都選擇了比杆賽作為樹妖規則，但仍有少數著名賽事延續了比洞賽這
+                      一較為古老的賽制，其中包括埃森哲比洞賽、萊德杯和總統杯等比賽。
+                    </p>
+                    <h5>計分</h5>
+                    <p>
+                      球手在每一洞記錄下揮桿進洞的杆數，並在規定的洞數結束後累計總的杆數。總杆數最低者為比賽優勝者。在差點計分比賽中，球員要根據總
+                      成績和各自的差點計算分差，最後決定優勝名次。
+                    </p>
+                    <p>
+                      一般每位球手的成績會與該洞的標準桿數以及其他球手的成績相比較。例如一位選手擊出的杆數比該洞的標準桿數多出3桿，那麼他的成績會
+                      顯示為「+3」。
+                    </p>
+                    <p>
+                      如果在規定的洞數內球手擊出的總杆數相同，那麼將舉行附加賽決定最終勝負。
+                    </p><hr>
+                    <h5>附加賽</h5>
+                    <p>
+                      大多數比賽中對於相同成績的球手的情況，都會採用附加賽方式解決。如果經過若干輪附加賽後仍無法決出
+                      輸贏，那麼可能會採用突然死亡法決定冠軍歸屬。
+                    </p>
+                    <p>
+                      許多大賽的附加賽方式都有所不同。在美國公開賽中，附加賽需要再打18洞比賽；但PGA錦標賽和英國公開賽只需要球手打3到4輪附加賽即可；
+                      而在大多數PGA巡迴賽和美國名人賽中，附加賽以突然死亡法的方式進行。在用時較久的附加賽中，如果仍有2名以上選手難分上下，那麼往往會改用突然死亡法決定冠軍。
+                    </p>
+                  </div>
+
+                  <!-- 比洞賽 -->
+                  <div class="tab-pane fade shadow rounded p-5" id="v-pills-matchPlay" role="tabpanel" aria-labelledby="v-pills-matchPlay-tab">
+                    <h4 class="mb-4">比洞賽</h4>
+                    <p class="font-italic text-muted mb-2">
+                      比洞賽（match-play），高爾夫球賽的一種賽制，在較為古老的比賽中相對流行，但目前已不再為大多數重要賽事使用，相對於「比杆賽」（stroke-play）。
+                    </p><hr>
+                    <h5>概要</h5>
+                    <p>
+                      高爾夫球賽的賽制主要分為比洞賽和比杆賽兩種。比洞賽的賽制下，參賽選手為兩人一組或兩隊，進行一對一對抗，在每一洞根據杆數決出勝負，最後根據選手贏得的球洞數決定最終名次。
+                    </p>
+                    <p>
+                      高爾夫球賽最初的形態是比洞賽，但由於比洞賽需要選手進行多輪淘汰才能決出最后冠軍，因此不適合大量選手同時參加，且因為電視運動節目現場直播的盛行，比洞賽容
+                      易因為比賽的淘汰結果而影響轉播收視率（若發生多位職業運動員被淘汰的情況，使得決賽圈剩下較不出名的業餘選手，容易影響轉播收視率），因此目前世界職業高爾夫球壇的主要賽事都改用比杆賽。
+                    </p>
+                    <p>
+                      在個人比洞賽中，有時會採用每組兩名、一次兩組的形式。這種情況下，可能會讓每組分別使用一個球，或者每個球手使用一個球。
+                    </p>
+                    <p>
+                      比洞賽中使用獨特的計分和表述方式。假設球員A和球員B參加一對一比賽，在第一洞比賽中，A擊出的杆數少於B，於是A贏得了該洞的勝利，這時表述為「A領先1洞」，如以B為主語，則表述為「B落後1洞」。
+                      這樣在一輪比賽中，選手在每一個洞決出一個小分，最後當其中一方選手領先優勢已不能被逆轉（超分）時，這一回合比賽結束。這時勝利一方的領先洞數（X）和剩餘未比賽的球洞數（Y）被記錄下來，表述為
+                      「X and Y」。舉例來說，當一方選手經過數輪比賽後，領先另一方5洞，但剩餘球洞只有4個，因此該選手必定取得勝利，因此表述為「某某以5 and 4獲勝」。當領先洞數等於剩餘洞數時，領先球員會被稱為
+                      「等洞方」（Dormie），意為他基本上可以在剩下的比賽中安心等待勝利的來臨。
+                    </p><hr>
+                    <h5>運用賽事</h5>
+                    <p>
+                      目前仍在使用比洞賽制度的主要球賽包括：歐美選手之間對抗的頂級賽事萊德杯，世界各國選手與美國選手對抗的總統杯，世界高爾夫球錦標賽系列之一的埃森哲比洞錦標賽等賽事。另外，四大滿貫賽事之一的
+                      PGA錦標賽在1958年之前也實行比洞賽制，但從1958年起改為比杆賽。
+                    </p>
+                    <hr>
+                    <h5>認輸和放棄</h5>
+                    <p>
+                      在比洞賽中，每一洞的杆數並不會被累計，因此沒有總杆數的概念。因此，當某一洞比賽中，一方球員可以預測其對手將極有可能在擊出下一桿後取得該洞勝利時，可以提出認輸。在日本，球手只需要喊
+                      出「OK」就表示放棄該洞。
+                    </p>
+                  </div>
+
+                  <!-- 四大賽 -->
+                  <div class="tab-pane fade shadow rounded p-5" id="v-pills-FourMajorCompet" role="tabpanel" aria-labelledby="v-pills-FourMajorCompet-tab">
+                    <h4 class="mb-4">四大賽</h4>
+                    <p class="font-italic text-muted mb-2">
+                      <strong>四大賽</strong>是指高爾夫球比賽中4項主要的男子賽事。
+                      <ul class="compet">
+                        <li>美國名人賽，每年4月在奧古斯塔高爾夫球俱樂部舉行。</li>
+                        <li>PGA錦標賽，原為每年8月舉辦，但由於美國8月氣候的不確定性，加上為避免聯邦快遞杯季後賽事、
+                          歐洲各國足球賽季衝突，以及奧運重新將高爾夫列為比賽項目等諸多因素，自從2019年開始更改為每年5月舉辦。</li>
+                        <li>美國公開賽，每年6月舉辦，主辦方是美國高爾夫球協會（USGA）。</li>
+                        <li>英國公開賽，每年7月舉辦，主辦方是R&A，英國聖安德魯斯皇家古老高爾夫俱樂部。</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <p>@CopyRight六角學院專題-高球巡禮，僅限練習用</p>
+  </footer>    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+  </body>
+</html>
